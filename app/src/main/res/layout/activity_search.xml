@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.zhy.autolayout.AutoFrameLayout
+        android:layout_width="match_parent"
+        android:background="#fd7801"
+        android:layout_height="110px">
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16px"
+            android:background="#ff902c"
+            android:layout_marginRight="16px"
+            android:layout_marginBottom="15px"
+            android:layout_marginTop="15px"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/ivOut"
+                android:layout_width="34px"
+                android:layout_height="34px"
+                android:layout_marginBottom="22px"
+                android:layout_marginLeft="30px"
+                android:layout_marginTop="22px"
+                android:src="@mipmap/back_up" />
+            
+            
+            <View
+                android:layout_width="1px"
+                android:layout_height="34px"
+                android:layout_gravity="center_vertical"
+                android:background="#f8c08d"
+                android:layout_marginLeft="30px"
+                />
+
+            <EditText
+                android:id="@+id/etSearch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="#ff902c"
+                android:textColorHint="#ffd6b2"
+                android:textSize="28px"
+                android:layout_marginLeft="20px"
+                android:hint="第一国际"
+                />
+
+
+        </com.zhy.autolayout.AutoLinearLayout>
+    </com.zhy.autolayout.AutoFrameLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="16px"
+        android:background="#f5f2f0"
+        />
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rvSearchResult"
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="1"
+        />
+
+</LinearLayout>

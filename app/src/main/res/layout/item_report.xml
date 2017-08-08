@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFF">
+
+    <TextView
+        android:id="@+id/tvClienName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="23px"
+        android:layout_marginTop="29px"
+        android:text="客户:  李明德"
+        android:textColor="#333333"
+        android:textSize="30px" />
+
+    <TextView
+        android:id="@+id/tvClienPhone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15px"
+        android:layout_marginTop="29px"
+        android:layout_toRightOf="@+id/tvClienName"
+        android:text="(15956565656)"
+        android:textColor="#666666"
+        android:textSize="28px" />
+
+
+    <CheckBox
+        android:id="@+id/cbExpire"
+        android:layout_width="24px"
+        android:layout_height="24px"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="30px"
+        android:layout_marginTop="33px"
+        android:background="@drawable/selector_psw_visible"
+        android:button="@null" />
+
+
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="2px"
+        android:layout_marginTop="30px"
+        android:layout_toLeftOf="@+id/cbExpire"
+        android:text="无效"
+        android:textColor="#666766"
+        android:textSize="28px" />
+
+    <View
+        android:id="@+id/splitLine"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_below="@+id/tvClienName"
+        android:layout_marginTop="29px"
+        android:background="#e0dad5" />
+
+    <TextView
+        android:id="@+id/tvIntentProject"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/splitLine"
+        android:layout_marginLeft="23px"
+        android:layout_marginTop="31px"
+        android:text="意向项目:  精英世家"
+        android:textColor="#595959"
+        android:textSize="28px" />
+
+    <TextView
+        android:id="@+id/tvReportTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvIntentProject"
+        android:layout_marginLeft="23px"
+        android:layout_marginTop="34px"
+        android:text="报备时间:  2017-03-09  12:00:00"
+        android:textColor="#595959"
+        android:textSize="28px" />
+
+
+    <TextView
+        android:id="@+id/tvLeftTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvReportTime"
+        android:layout_marginLeft="23px"
+        android:layout_marginTop="34px"
+        android:text="有效时间剩余:  23天5小时60分"
+        android:textColor="#595959"
+        android:textSize="28px" />
+
+
+    <TextView
+        android:id="@+id/tvManager"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvLeftTime"
+        android:layout_marginLeft="23px"
+        android:layout_marginTop="34px"
+        android:text="报备经纪人:  李明德  (159454545)"
+        android:textColor="#595959"
+        android:textSize="28px" />
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="20px"
+        android:layout_below="@+id/tvManager"
+        android:layout_marginBottom="31px"
+        android:layout_marginTop="33px"
+        android:background="#999" />
+
+
+</RelativeLayout>

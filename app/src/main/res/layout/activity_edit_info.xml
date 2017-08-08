@@ -1,0 +1,1159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF">
+
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tvEstateName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20px"
+                android:layout_marginTop="40px"
+                android:text="楼盘名称:"
+                android:textColor="#333333"
+                android:textSize="28px" />
+
+            <EditText
+                android:id="@+id/etEstateName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="99px"
+                android:layout_marginTop="40px"
+                android:background="#FFF"
+                android:layout_toRightOf="@+id/tvEstateName"
+                android:text="湖景一号别墅"
+                android:textColor="#333333"
+                android:textSize="28px" />
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_below="@+id/etEstateName"
+                android:layout_marginLeft="220px"
+                android:layout_marginRight="20px"
+                android:layout_marginTop="20px"
+                android:background="#999591" />
+
+
+        </com.zhy.autolayout.AutoRelativeLayout>
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tvSaleState"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20px"
+                android:layout_marginTop="53px"
+                android:text="分销状态:"
+                android:textColor="#333333"
+                android:textSize="28px" />
+
+
+            <RadioGroup
+                android:id="@+id/rgSales"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="99px"
+                android:layout_marginTop="40px"
+                android:layout_toRightOf="@+id/tvSaleState"
+                android:orientation="horizontal">
+
+
+                <RadioButton
+                    android:id="@+id/rgUse"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:button="@null"
+                    android:paddingBottom="13px"
+                    android:paddingLeft="24px"
+                    android:paddingRight="24px"
+                    android:paddingTop="13px"
+                    android:text="启用"
+                    android:background="@drawable/selector_common"
+                    android:checked="true"
+                    android:textColor="@drawable/selector_text_color"
+                    android:textSize="28px" />
+
+                <RadioButton
+                    android:id="@+id/rgClose"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:button="@null"
+                    android:layout_marginLeft="120px"
+                    android:paddingBottom="13px"
+                    android:paddingLeft="24px"
+                    android:paddingRight="24px"
+                    android:paddingTop="13px"
+                    android:text="关闭"
+                    android:background="@drawable/selector_common"
+                    android:textColor="@drawable/selector_text_color"
+                    android:textSize="28px" />
+
+            </RadioGroup>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_below="@+id/rgSales"
+                android:layout_marginLeft="220px"
+                android:layout_marginRight="20px"
+                android:layout_marginTop="20px"
+                android:background="#999591" />
+
+
+        </com.zhy.autolayout.AutoRelativeLayout>
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tvAveragePrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20px"
+                android:layout_marginTop="40px"
+                android:text="项目均价:"
+                android:textColor="#333333"
+                android:textSize="28px" />
+
+            <EditText
+                android:id="@+id/etAveragePrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="99px"
+                android:layout_marginTop="40px"
+                android:background="#FFF"
+                android:layout_toRightOf="@+id/tvAveragePrice"
+                android:text="300/m2"
+                android:textColor="#333333"
+                android:textSize="28px" />
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_below="@+id/tvAveragePrice"
+                android:layout_marginLeft="220px"
+                android:layout_marginRight="20px"
+                android:layout_marginTop="20px"
+                android:background="#999591" />
+
+
+        </com.zhy.autolayout.AutoRelativeLayout>
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tvCommissionPoint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20px"
+                android:layout_marginTop="53px"
+                android:text="结佣节点:"
+                android:textColor="#333333"
+                android:textSize="28px" />
+
+
+            <RadioGroup
+                android:id="@+id/rgCommissionPonit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="99px"
+                android:layout_marginTop="40px"
+                android:layout_toRightOf="@+id/tvCommissionPoint"
+                android:orientation="horizontal">
+
+
+                <RadioButton
+                    android:id="@+id/rgSignSuccess"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:button="@null"
+                    android:paddingBottom="13px"
+                    android:paddingLeft="24px"
+                    android:paddingRight="24px"
+                    android:paddingTop="13px"
+                    android:text="签约成功"
+                    android:background="@drawable/selector_common"
+                    android:checked="true"
+                    android:textColor="@drawable/selector_text_color"
+                    android:textSize="28px" />
+
+                <RadioButton
+                    android:id="@+id/rgHouseHandOver"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:button="@null"
+                    android:layout_marginLeft="120px"
+                    android:paddingBottom="13px"
+                    android:paddingLeft="24px"
+                    android:paddingRight="24px"
+                    android:paddingTop="13px"
+                    android:text="房屋过户"
+                    android:background="@drawable/selector_common"
+                    android:textColor="@drawable/selector_text_color"
+                    android:textSize="28px" />
+
+            </RadioGroup>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_below="@+id/rgCommissionPonit"
+                android:layout_marginLeft="220px"
+                android:layout_marginRight="20px"
+                android:layout_marginTop="20px"
+                android:background="#999591" />
+
+
+        </com.zhy.autolayout.AutoRelativeLayout>
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tvCalculateCommissCircle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20px"
+                android:layout_marginTop="40px"
+                android:text="结佣周期:"
+                android:textColor="#333333"
+                android:textSize="28px" />
+
+            <EditText
+                android:id="@+id/etCalculateCommissCircle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="99px"
+                android:layout_marginTop="40px"
+                android:background="#FFF"
+                android:layout_toRightOf="@+id/tvCalculateCommissCircle"
+                android:text="15天"
+                android:textColor="#333333"
+                android:textSize="28px" />
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_below="@+id/tvCalculateCommissCircle"
+                android:layout_marginLeft="220px"
+                android:layout_marginRight="20px"
+                android:layout_marginTop="20px"
+                android:background="#999591" />
+
+
+        </com.zhy.autolayout.AutoRelativeLayout>
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tvClientType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20px"
+                android:layout_marginTop="53px"
+                android:text="结佣节点:"
+                android:textColor="#333333"
+                android:textSize="28px" />
+
+
+            <RadioGroup
+                android:id="@+id/rgClientType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="99px"
+                android:layout_marginTop="40px"
+                android:layout_toRightOf="@+id/tvClientType"
+                android:orientation="horizontal">
+
+
+                <RadioButton
+                    android:id="@+id/rgLookFirst"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:button="@null"
+                    android:paddingBottom="13px"
+                    android:paddingLeft="24px"
+                    android:paddingRight="24px"
+                    android:paddingTop="13px"
+                    android:text="看房为主"
+                    android:background="@drawable/selector_common"
+                    android:checked="true"
+                    android:textColor="@drawable/selector_text_color"
+                    android:textSize="28px" />
+
+                <RadioButton
+                    android:id="@+id/rgReportFirst"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:button="@null"
+                    android:layout_marginLeft="120px"
+                    android:paddingBottom="13px"
+                    android:paddingLeft="24px"
+                    android:paddingRight="24px"
+                    android:paddingTop="13px"
+                    android:text="报备为主"
+                    android:background="@drawable/selector_common"
+                    android:textColor="@drawable/selector_text_color"
+                    android:textSize="28px" />
+
+            </RadioGroup>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_below="@+id/rgClientType"
+                android:layout_marginLeft="220px"
+                android:layout_marginRight="20px"
+                android:layout_marginTop="20px"
+                android:background="#999591" />
+
+
+        </com.zhy.autolayout.AutoRelativeLayout>
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tvAuditReport"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20px"
+                android:layout_marginTop="53px"
+                android:text="结佣节点:"
+                android:textColor="#333333"
+                android:textSize="28px" />
+
+
+            <RadioGroup
+                android:id="@+id/rgAuditReport"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="99px"
+                android:layout_marginTop="40px"
+                android:layout_toRightOf="@+id/tvAuditReport"
+                android:orientation="horizontal">
+
+
+                <RadioButton
+                    android:id="@+id/rgAutoAudit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:button="@null"
+                    android:paddingBottom="13px"
+                    android:paddingLeft="24px"
+                    android:paddingRight="24px"
+                    android:paddingTop="13px"
+                    android:text="看房为主"
+                    android:background="@drawable/selector_common"
+                    android:checked="true"
+                    android:textColor="@drawable/selector_text_color"
+                    android:textSize="28px" />
+
+                <RadioButton
+                    android:id="@+id/rgManuallyAudit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:button="@null"
+                    android:layout_marginLeft="120px"
+                    android:paddingBottom="13px"
+                    android:paddingLeft="24px"
+                    android:paddingRight="24px"
+                    android:paddingTop="13px"
+                    android:text="报备为主"
+                    android:background="@drawable/selector_common"
+                    android:textColor="@drawable/selector_text_color"
+                    android:textSize="28px" />
+
+            </RadioGroup>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_below="@+id/rgAuditReport"
+                android:layout_marginLeft="220px"
+                android:layout_marginRight="20px"
+                android:layout_marginTop="20px"
+                android:background="#999591" />
+
+
+        </com.zhy.autolayout.AutoRelativeLayout>
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tvClientExpire"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20px"
+                android:layout_marginTop="40px"
+                android:text="客户有效期:"
+                android:textColor="#333333"
+                android:textSize="28px" />
+
+            <EditText
+                android:id="@+id/etClientExpire"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="99px"
+                android:layout_marginTop="40px"
+                android:background="#FFF"
+                android:layout_toRightOf="@+id/tvClientExpire"
+                android:text="15天"
+                android:textColor="#333333"
+                android:textSize="28px" />
+
+
+        </com.zhy.autolayout.AutoRelativeLayout>
+
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tvLookHouseProtectTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20px"
+                android:layout_marginTop="40px"
+                android:text="看房保护期:"
+                android:textColor="#333333"
+                android:textSize="28px" />
+
+            <EditText
+                android:id="@+id/etLookHouseProtectTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="99px"
+                android:layout_marginTop="40px"
+                android:background="#FFF"
+                android:layout_toRightOf="@+id/tvLookHouseProtectTime"
+                android:text="15天"
+                android:textColor="#333333"
+                android:textSize="28px" />
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_below="@+id/tvLookHouseProtectTime"
+                android:layout_marginLeft="220px"
+                android:layout_marginRight="20px"
+                android:layout_marginTop="20px"
+                android:background="#999591" />
+
+
+        </com.zhy.autolayout.AutoRelativeLayout>
+
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tvCarryClientDoneTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20px"
+                android:layout_marginTop="40px"
+                android:text="带客成交期:"
+                android:textColor="#333333"
+                android:textSize="28px" />
+
+            <EditText
+                android:id="@+id/etCarryClientDoneTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="99px"
+                android:layout_marginTop="40px"
+                android:background="#FFF"
+                android:layout_toRightOf="@+id/tvCarryClientDoneTime"
+                android:text="15天"
+                android:textColor="#333333"
+                android:textSize="28px" />
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_below="@+id/tvCarryClientDoneTime"
+                android:layout_marginLeft="220px"
+                android:layout_marginRight="20px"
+                android:layout_marginTop="20px"
+                android:background="#999591" />
+
+
+        </com.zhy.autolayout.AutoRelativeLayout>
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tvYuYueEffectTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20px"
+                android:layout_marginTop="40px"
+                android:text="预约有效期:"
+                android:textColor="#333333"
+                android:textSize="28px" />
+
+            <EditText
+                android:id="@+id/etYuYueEffectTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="99px"
+                android:layout_marginTop="40px"
+                android:background="#FFF"
+                android:layout_toRightOf="@+id/tvYuYueEffectTime"
+                android:text="15天"
+                android:textColor="#333333"
+                android:textSize="28px" />
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_below="@+id/tvYuYueEffectTime"
+                android:layout_marginLeft="220px"
+                android:layout_marginRight="20px"
+                android:layout_marginTop="20px"
+                android:background="#999591" />
+
+
+        </com.zhy.autolayout.AutoRelativeLayout>
+
+
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tvDoneReward"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20px"
+                android:layout_marginTop="40px"
+                android:text="成交奖:"
+                android:textColor="#333333"
+                android:textSize="28px" />
+
+            <EditText
+                android:id="@+id/etDoneReward"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="99px"
+                android:layout_marginTop="40px"
+                android:background="#FFF"
+                android:layout_toRightOf="@+id/tvDoneReward"
+                android:text="15天"
+                android:textColor="#333333"
+                android:textSize="28px" />
+
+
+        </com.zhy.autolayout.AutoRelativeLayout>
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tvCarryReward"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20px"
+                android:layout_marginTop="40px"
+                android:text="带客奖:"
+                android:textColor="#333333"
+                android:textSize="28px" />
+
+            <EditText
+                android:id="@+id/etCarryReward"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="99px"
+                android:layout_marginTop="40px"
+                android:background="#FFF"
+                android:layout_toRightOf="@+id/tvCarryReward"
+                android:text="15天"
+                android:textColor="#333333"
+                android:textSize="28px" />
+
+
+        </com.zhy.autolayout.AutoRelativeLayout>
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tvClientSourceReward"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20px"
+                android:layout_marginTop="40px"
+                android:text="客源奖:"
+                android:textColor="#333333"
+                android:textSize="28px" />
+
+            <EditText
+                android:id="@+id/etClientSourceReward"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="99px"
+                android:layout_marginTop="40px"
+                android:background="#FFF"
+                android:layout_toRightOf="@+id/tvClientSourceReward"
+                android:text="15天"
+                android:textColor="#333333"
+                android:textSize="28px" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_below="@+id/tvClientSourceReward"
+                android:layout_marginLeft="220px"
+                android:layout_marginRight="20px"
+                android:layout_marginTop="20px"
+                android:background="#999591" />
+
+
+        </com.zhy.autolayout.AutoRelativeLayout>
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tvHouseSourceReward"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20px"
+                android:layout_marginTop="40px"
+                android:text="房源奖:"
+                android:textColor="#333333"
+                android:textSize="28px" />
+
+            <EditText
+                android:id="@+id/etHouseSourceReward"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="99px"
+                android:layout_marginTop="40px"
+                android:background="#FFF"
+                android:layout_toRightOf="@+id/tvHouseSourceReward"
+                android:text="15天"
+                android:textColor="#333333"
+                android:textSize="28px" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_below="@+id/tvHouseSourceReward"
+                android:layout_marginLeft="220px"
+                android:layout_marginRight="20px"
+                android:layout_marginTop="20px"
+                android:background="#999591" />
+
+
+        </com.zhy.autolayout.AutoRelativeLayout>
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tvHandler"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20px"
+                android:layout_marginTop="40px"
+                android:text="现场交接人:"
+                android:textColor="#333333"
+                android:textSize="28px" />
+
+            <EditText
+                android:id="@+id/etHandler"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20px"
+                android:layout_alignLeft="@+id/splitLine"
+                android:layout_marginTop="40px"
+                android:background="#FFF"
+                android:layout_toRightOf="@+id/tvHandler"
+                android:text="李元芳"
+                android:textColor="#333333"
+                android:textSize="28px" />
+
+            <View
+                android:id="@+id/splitLine"
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_below="@+id/tvHandler"
+                android:layout_marginLeft="220px"
+                android:layout_marginRight="20px"
+                android:layout_marginTop="20px"
+                android:background="#999591" />
+
+
+        </com.zhy.autolayout.AutoRelativeLayout>
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tvHandlerPhone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20px"
+                android:layout_marginTop="40px"
+                android:text="交接人手机:"
+                android:textColor="#333333"
+                android:textSize="28px" />
+
+
+            <View
+                android:id="@+id/HandlerPhonesplitLine"
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_below="@+id/tvHandlerPhone"
+                android:layout_marginLeft="220px"
+                android:layout_marginRight="20px"
+                android:layout_marginTop="20px"
+                android:background="#999591" />
+
+            <EditText
+                android:id="@+id/etHandlerPhone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20px"
+                android:layout_alignLeft="@+id/HandlerPhonesplitLine"
+                android:layout_marginTop="40px"
+                android:background="#FFF"
+                android:layout_toRightOf="@+id/tvHandler"
+                android:text="15956555654"
+                android:textColor="#333333"
+                android:textSize="28px" />
+
+        </com.zhy.autolayout.AutoRelativeLayout>
+
+
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tvSalePoint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20px"
+                android:layout_marginTop="40px"
+                android:text="楼盘买点:"
+                android:textColor="#333333"
+                android:textSize="28px" />
+
+
+            <View
+                android:id="@+id/SalePointSplitLine"
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_below="@+id/etSalePoint"
+                android:layout_marginLeft="220px"
+                android:layout_marginRight="20px"
+                android:layout_marginTop="20px"
+                android:background="#999591" />
+
+            <EditText
+                android:id="@+id/etSalePoint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20px"
+                android:layout_alignLeft="@+id/SalePointSplitLine"
+                android:layout_marginRight="20px"
+                android:layout_marginTop="40px"
+                android:background="#FFF"
+                android:layout_toRightOf="@+id/tvHandler"
+                android:text="就是单号副科级都是分开的手机号分开觉得好烦剑荡四方会计电算化分开收到花 "
+                android:textColor="#333333"
+                android:textSize="28px" />
+
+        </com.zhy.autolayout.AutoRelativeLayout>
+
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tvCommissionRule"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20px"
+                android:layout_marginTop="40px"
+                android:text="佣金法则:"
+                android:textColor="#333333"
+                android:textSize="28px" />
+
+
+            <View
+                android:id="@+id/CommissionRuleSplitLine"
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_below="@+id/etCommissionRule"
+                android:layout_marginLeft="220px"
+                android:layout_marginRight="20px"
+                android:layout_marginTop="20px"
+                android:background="#999591" />
+
+            <EditText
+                android:id="@+id/etCommissionRule"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20px"
+                android:layout_alignLeft="@+id/CommissionRuleSplitLine"
+                android:layout_marginRight="20px"
+                android:layout_marginTop="40px"
+                android:background="#FFF"
+                android:layout_toRightOf="@+id/tvHandler"
+                android:text="5%"
+                android:textColor="#333333"
+                android:textSize="28px" />
+
+        </com.zhy.autolayout.AutoRelativeLayout>
+
+
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tvProvideHouse"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20px"
+                android:layout_marginTop="40px"
+                android:text="提供房源:"
+                android:textColor="#333333"
+                android:textSize="28px" />
+
+
+            <View
+                android:id="@+id/ProvideHouseSplitLine"
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_below="@+id/etProvideHouse"
+                android:layout_marginLeft="220px"
+                android:layout_marginRight="20px"
+                android:layout_marginTop="20px"
+                android:background="#999591" />
+
+            <EditText
+                android:id="@+id/etProvideHouse"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20px"
+                android:layout_alignLeft="@+id/ProvideHouseSplitLine"
+                android:layout_marginRight="20px"
+                android:layout_marginTop="40px"
+                android:background="#FFF"
+                android:layout_toRightOf="@+id/tvHandler"
+                android:text="5%"
+                android:textColor="#333333"
+                android:textSize="28px" />
+
+        </com.zhy.autolayout.AutoRelativeLayout>
+
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tvFuPan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20px"
+                android:layout_marginTop="40px"
+                android:text="复盘:"
+                android:textColor="#333333"
+                android:textSize="28px" />
+
+
+            <View
+                android:id="@+id/FuPanSplitLine"
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_below="@+id/etFuPan"
+                android:layout_marginLeft="220px"
+                android:layout_marginRight="20px"
+                android:layout_marginTop="20px"
+                android:background="#999591" />
+
+            <EditText
+                android:id="@+id/etFuPan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20px"
+                android:layout_alignLeft="@+id/FuPanSplitLine"
+                android:layout_marginRight="20px"
+                android:layout_marginTop="40px"
+                android:background="#FFF"
+                android:layout_toRightOf="@+id/tvHandler"
+                android:text="5%"
+                android:textColor="#333333"
+                android:textSize="28px" />
+
+        </com.zhy.autolayout.AutoRelativeLayout>
+
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tvGetKey"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20px"
+                android:layout_marginTop="40px"
+                android:text="拿钥匙:"
+                android:textColor="#333333"
+                android:textSize="28px" />
+
+
+            <View
+                android:id="@+id/GetKeySplitLine"
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_below="@+id/etGetKey"
+                android:layout_marginLeft="220px"
+                android:layout_marginRight="20px"
+                android:layout_marginTop="20px"
+                android:background="#999591" />
+
+            <EditText
+                android:id="@+id/etGetKey"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20px"
+                android:layout_alignLeft="@+id/GetKeySplitLine"
+                android:layout_marginRight="20px"
+                android:layout_marginTop="40px"
+                android:background="#FFF"
+                android:text="5%"
+                android:textColor="#333333"
+                android:textSize="28px" />
+
+        </com.zhy.autolayout.AutoRelativeLayout>
+
+
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tvUnique"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20px"
+                android:layout_marginTop="40px"
+                android:text="独家:"
+                android:textColor="#333333"
+                android:textSize="28px" />
+
+
+            <View
+                android:id="@+id/UniqueSplitLine"
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_below="@+id/etUnique"
+                android:layout_marginLeft="220px"
+                android:layout_marginRight="20px"
+                android:layout_marginTop="20px"
+                android:background="#999591" />
+
+            <EditText
+                android:id="@+id/etUnique"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20px"
+                android:layout_alignLeft="@+id/UniqueSplitLine"
+                android:layout_marginRight="20px"
+                android:layout_marginTop="40px"
+                android:background="#FFF"
+                android:text="5%"
+                android:textColor="#333333"
+                android:textSize="28px" />
+
+        </com.zhy.autolayout.AutoRelativeLayout>
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tvProvideClientSource"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20px"
+                android:layout_marginTop="40px"
+                android:text="提供客源:"
+                android:textColor="#333333"
+                android:textSize="28px" />
+
+
+            <View
+                android:id="@+id/ProvideClientSourceSplitLine"
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_below="@+id/etProvideClientSource"
+                android:layout_marginLeft="220px"
+                android:layout_marginRight="20px"
+                android:layout_marginTop="20px"
+                android:background="#999591" />
+
+            <EditText
+                android:id="@+id/etProvideClientSource"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20px"
+                android:layout_alignLeft="@+id/ProvideClientSourceSplitLine"
+                android:layout_marginRight="20px"
+                android:layout_marginTop="40px"
+                android:background="#FFF"
+                android:text="5%"
+                android:textColor="#333333"
+                android:textSize="28px" />
+
+        </com.zhy.autolayout.AutoRelativeLayout>
+
+
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tvCarryClientDone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20px"
+                android:layout_marginTop="40px"
+                android:text="带客成交:"
+                android:textColor="#333333"
+                android:textSize="28px" />
+
+
+            <View
+                android:id="@+id/CarryClientDoneSplitLine"
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_below="@+id/etCarryClientDone"
+                android:layout_marginLeft="220px"
+                android:layout_marginRight="20px"
+                android:layout_marginTop="20px"
+                android:background="#999591" />
+
+            <EditText
+                android:id="@+id/etCarryClientDone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20px"
+                android:layout_alignLeft="@+id/CarryClientDoneSplitLine"
+                android:layout_marginRight="20px"
+                android:layout_marginTop="40px"
+                android:background="#FFF"
+                android:text="5%"
+                android:textColor="#333333"
+                android:textSize="28px" />
+
+        </com.zhy.autolayout.AutoRelativeLayout>
+
+
+
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_marginBottom="169px"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tvRuleRemark"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20px"
+                android:layout_marginTop="40px"
+                android:text="规则备注:"
+                android:textColor="#333333"
+                android:textSize="28px" />
+
+
+            <View
+                android:id="@+id/RuleRemarkSplitLine"
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_below="@+id/etRuleRemark"
+                android:layout_marginLeft="220px"
+                android:layout_marginRight="20px"
+                android:layout_marginTop="20px"
+                android:background="#999591" />
+
+            <EditText
+                android:id="@+id/etRuleRemark"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20px"
+                android:layout_alignLeft="@+id/RuleRemarkSplitLine"
+                android:layout_marginRight="20px"
+                android:layout_marginTop="40px"
+                android:background="#FFF"
+                android:text="就是单号副科级都是分开的手机号分开觉得好烦剑荡四方会计电算化分开收到花 "
+                android:textColor="#333333"
+                android:textSize="28px" />
+
+        </com.zhy.autolayout.AutoRelativeLayout>
+
+
+
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+</ScrollView>

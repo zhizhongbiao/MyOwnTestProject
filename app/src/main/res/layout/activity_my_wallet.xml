@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF"
+    android:divider="@drawable/shape_divider_bg"
+    android:dividerPadding="1px"
+    android:showDividers="middle"
+    android:orientation="vertical">
+
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/ivBalance"
+            android:layout_width="32px"
+            android:layout_height="32px"
+            android:layout_marginLeft="20px"
+            android:layout_marginTop="18px"
+            android:src="@mipmap/ic_launcher_round" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="9px"
+            android:layout_marginTop="19px"
+            android:layout_toRightOf="@+id/ivBalance"
+            android:text="余额:"
+            android:textColor="#666666"
+            android:textSize="30px" />
+
+
+        <TextView
+            android:id="@+id/tvMoneyCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="66px"
+            android:layout_marginLeft="121px"
+            android:layout_marginTop="112px"
+            android:text="20565,45"
+
+            android:textColor="#fd7801"
+            android:textSize="48px" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/tvMoneyCount"
+            android:layout_marginLeft="17px"
+            android:layout_toRightOf="@+id/tvMoneyCount"
+            android:text="元"
+            android:textColor="#999999"
+            android:textSize="30px" />
+
+
+        <TextView
+            android:id="@+id/tvMoneyDetail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="12px"
+            android:paddingLeft="24px"
+            android:paddingRight="24px"
+            android:paddingTop="12px"
+            android:text="详细"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="60px"
+            android:layout_marginTop="40px"
+            android:background="@drawable/shape_detail_bg"
+            android:textColor="#fffefe"
+            android:textSize="28px" />
+
+
+
+        <TextView
+            android:id="@+id/tvMoneyRecharge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="12px"
+            android:paddingLeft="24px"
+            android:paddingRight="24px"
+            android:paddingTop="12px"
+            android:text="充值"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="60px"
+            android:layout_below="@+id/tvMoneyDetail"
+            android:layout_marginTop="40px"
+            android:background="@drawable/shape_recharge_bg"
+            android:textColor="#fffefe"
+            android:textSize="28px" />
+
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="16px"
+        android:background="#f5f2f0" />
+
+
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:id="@+id/llRechargeCount"
+        android:layout_width="match_parent"
+        android:layout_height="100px"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        >
+
+
+        <ImageView
+            android:layout_width="44px"
+            android:layout_height="44px"
+            android:layout_marginLeft="26px"
+            android:src="@mipmap/ic_launcher_round"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="累积充值:"
+            android:textColor="#666666"
+            android:layout_marginLeft="24px"
+            android:textSize="30px" />
+
+
+        <View
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            />
+
+        <TextView
+            android:id="@+id/tvRechargeCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="25555,55:"
+            android:textColor="#333333"
+            android:textSize="30px" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="元"
+            android:textColor="#333333"
+            android:textSize="24px" />
+
+
+        <ImageView
+            android:layout_width="30px"
+            android:layout_height="30px"
+            android:layout_marginLeft="17px"
+            android:layout_marginRight="17px"
+            android:src="@mipmap/unfold_right"
+            />
+
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+
+
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="16px"
+        android:background="#f5f2f0" />
+
+
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:id="@+id/llCommission"
+        android:layout_width="match_parent"
+        android:layout_height="100px"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        >
+
+
+        <ImageView
+            android:layout_width="44px"
+            android:layout_height="44px"
+            android:layout_marginLeft="26px"
+            android:src="@mipmap/ic_launcher_round"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="佣金结算:"
+            android:textColor="#666666"
+            android:layout_marginLeft="24px"
+            android:textSize="30px" />
+
+
+        <View
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            />
+
+        <TextView
+            android:id="@+id/tvCommission"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="25555,55:"
+            android:textColor="#333333"
+            android:textSize="30px" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="元"
+            android:textColor="#333333"
+            android:textSize="24px" />
+
+
+        <ImageView
+            android:layout_width="30px"
+            android:layout_height="30px"
+            android:layout_marginLeft="17px"
+            android:layout_marginRight="17px"
+            android:src="@mipmap/unfold_right"
+            />
+
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:background="#f5f2f0" />
+
+
+</LinearLayout>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/ivEstate"
+        android:layout_width="688px"
+        android:layout_height="400px"
+        android:layout_centerHorizontal="true"
+        android:src="@mipmap/ic_launcher_round" />
+
+    <TextView
+        android:id="@+id/etEstateName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/ivEstate"
+        android:layout_below="@+id/ivEstate"
+        android:layout_marginTop="27px"
+        android:text="付英华动画华府"
+        android:textColor="#333333"
+        android:textSize="30px" />
+
+    <TextView
+        android:id="@+id/tvEstateLocate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ivEstate"
+        android:layout_marginTop="27px"
+        android:layout_toRightOf="@+id/etEstateName"
+        android:text="(南城)"
+        android:textColor="#666666"
+        android:textSize="30px" />
+
+    <TextView
+        android:id="@+id/tvEstatePrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ivEstate"
+        android:layout_marginTop="29px"
+        android:layout_toLeftOf="@+id/tvPriceUnit"
+        android:text="10000"
+        android:textColor="#fd7801"
+        android:textSize="30px" />
+
+
+    <TextView
+        android:id="@+id/tvPriceUnit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/ivEstate"
+        android:layout_below="@+id/ivEstate"
+        android:layout_marginTop="30px"
+        android:text="元/方"
+        android:textColor="#fd7801"
+        android:textSize="24px" />
+
+</RelativeLayout>
