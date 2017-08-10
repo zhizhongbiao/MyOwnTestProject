@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <include layout="@layout/horizontal_split_line" />
+
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="28px"
+        android:layout_marginTop="22px"
+        android:text="王**"
+        android:textColor="#333333"
+        android:textSize="28px" />
+
+
+    <TextView
+        android:id="@+id/tvPhone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="28px"
+        android:layout_marginTop="22px"
+        android:layout_toRightOf="@+id/tvName"
+        android:text="1592323323"
+        android:textColor="#999999"
+        android:textSize="28px" />
+
+    <TextView
+        android:id="@+id/tvOrderType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30px"
+        android:layout_marginTop="19px"
+        android:layout_toRightOf="@+id/tvPhone"
+        android:background="@drawable/shape_rent_bg"
+        android:paddingBottom="8px"
+        android:paddingLeft="7px"
+        android:paddingRight="7px"
+        android:paddingTop="8px"
+        android:text="租房"
+        android:textColor="#FFF"
+        android:textSize="18px" />
+
+
+    <TextView
+        android:id="@+id/tvIntentProperty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvName"
+        android:layout_marginBottom="24px"
+        android:layout_marginLeft="28px"
+        android:layout_marginTop="17px"
+        android:text="意向楼盘:"
+        android:textColor="#666666"
+        android:textSize="28px" />
+
+    <TextView
+        android:id="@+id/tvIntentPropertyName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvPhone"
+        android:layout_marginBottom="24px"
+        android:layout_marginLeft="10px"
+        android:layout_marginTop="17px"
+        android:layout_toRightOf="@+id/tvIntentProperty"
+        android:text="第一国际"
+        android:textColor="#333333"
+        android:textSize="28px" />
+
+    <include layout="@layout/horizontal_split_line" />
+
+
+    <ImageView
+        android:id="@+id/ivGetOrder"
+        android:layout_width="80px"
+        android:layout_height="80px"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="30px"
+        android:src="@mipmap/ic_launcher_round" />
+
+
+</RelativeLayout>

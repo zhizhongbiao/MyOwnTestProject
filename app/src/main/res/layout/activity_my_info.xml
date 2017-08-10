@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80px"
+        android:layout_marginTop="11px"
+        android:background="#fff"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="28px"
+            android:text="登录账号"
+            android:textColor="#333333"
+            android:textSize="28px" />
+
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="10px"
+            android:layout_marginLeft="28px"
+            android:layout_marginTop="10px"
+            android:background="@color/splitLineColor" />
+
+
+        <EditText
+            android:id="@+id/etLoginAccount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30px"
+            android:background="#fff"
+            android:hint="1595565656"
+            android:inputType="phone"
+            android:textColor="#999999"
+            android:textSize="28px" />
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <include layout="@layout/horizontal_split_line" />
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80px"
+        android:background="#fff"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="28px"
+            android:text="负  责  人"
+            android:textColor="#333333"
+            android:textSize="28px" />
+
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="10px"
+            android:layout_marginLeft="28px"
+            android:layout_marginTop="10px"
+            android:background="@color/splitLineColor" />
+
+
+        <EditText
+            android:id="@+id/etChargerName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30px"
+            android:background="#fff"
+            android:hint="李白"
+            android:inputType="phone"
+            android:textColor="#999999"
+            android:textSize="28px" />
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <include layout="@layout/horizontal_split_line" />
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80px"
+        android:background="#fff"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="28px"
+            android:text="公司简称"
+            android:textColor="#333333"
+            android:textSize="28px" />
+
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="10px"
+            android:layout_marginLeft="28px"
+            android:layout_marginTop="10px"
+            android:background="@color/splitLineColor" />
+
+
+        <EditText
+            android:id="@+id/etCompanyShortName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30px"
+            android:background="#fff"
+            android:hint="腾讯科技"
+            android:inputType="phone"
+            android:textColor="#999999"
+            android:textSize="28px" />
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <include layout="@layout/horizontal_split_line" />
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80px"
+        android:background="#fff"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="28px"
+            android:text="公司全称"
+            android:textColor="#333333"
+            android:textSize="28px" />
+
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="10px"
+            android:layout_marginLeft="28px"
+            android:layout_marginTop="10px"
+            android:background="@color/splitLineColor" />
+
+
+        <EditText
+            android:id="@+id/etCompanyWholeName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30px"
+            android:background="#fff"
+            android:hint="腾讯的风格的风格的风格科技"
+            android:inputType="phone"
+            android:textColor="#999999"
+            android:textSize="28px" />
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <include layout="@layout/horizontal_split_line" />
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80px"
+        android:background="#fff"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="28px"
+            android:text="管理楼盘"
+            android:textColor="#333333"
+            android:textSize="28px" />
+
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="10px"
+            android:layout_marginLeft="28px"
+            android:layout_marginTop="10px"
+            android:background="@color/splitLineColor" />
+
+
+        <EditText
+            android:id="@+id/etManagerPropertyCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30px"
+            android:background="#fff"
+            android:hint="20个"
+            android:inputType="phone"
+            android:textColor="#999999"
+            android:textSize="28px" />
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <include layout="@layout/horizontal_split_line" />
+
+    <Button
+        android:id="@+id/btnComfirmCommite"
+        android:layout_width="match_parent"
+        android:layout_height="88px"
+        android:layout_marginLeft="30px"
+        android:layout_marginRight="30px"
+        android:layout_marginTop="41px"
+        android:background="#fd7801"
+        android:paddingBottom="24px"
+        android:paddingTop="24px"
+        android:text="确认提交"
+        android:textColor="#FFF"
+        android:textSize="28px" />
+
+</LinearLayout>

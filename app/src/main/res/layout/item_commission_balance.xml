@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFF"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvPropertyName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="38px"
+            android:layout_marginTop="28px"
+            android:text="万达广场"
+            android:textColor="#333333"
+            android:textSize="28px" />
+
+        <TextView
+            android:id="@+id/tvPropertyLocate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="28px"
+            android:text="(南城)"
+            android:textColor="#999999"
+            android:textSize="24px" />
+
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFF"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvPropertyDetail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="38px"
+            android:layout_marginTop="18px"
+            android:text="3房2厅   98m2"
+            android:textColor="#333333"
+            android:textSize="28px" />
+
+        <View
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+
+        <TextView
+            android:id="@+id/tvCommissionState"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="39px"
+            android:layout_marginTop="18px"
+            android:text="已结佣"
+            android:textColor="#76c400"
+            android:textSize="26px" />
+
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFF"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvDealMoney"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="38px"
+            android:layout_marginTop="18px"
+            android:text="成交金额:   895656565656565"
+            android:textColor="#333333"
+            android:textSize="28px" />
+
+        <View
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+
+        <TextView
+            android:id="@+id/tvDaelTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="33px"
+            android:layout_marginRight="39px"
+            android:layout_marginTop="18px"
+            android:text="2017-01-02  12:00:00"
+            android:textColor="#999999"
+            android:textSize="24px" />
+
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <include layout="@layout/horizontal_split_line" />
+
+
+</LinearLayout>

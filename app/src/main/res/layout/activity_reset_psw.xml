@@ -4,122 +4,80 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-
-    <com.zhy.autolayout.AutoLinearLayout
+    <include layout="@layout/horizontal_split_line" />
+    <EditText
+        android:id="@+id/etOldPsw"
         android:layout_width="match_parent"
-        android:layout_height="101px"
-        android:layout_marginLeft="40px"
-        android:layout_marginRight="40px"
-        android:layout_marginTop="62px"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="21px"
         android:background="#fff"
-        android:gravity="center_vertical"
-        android:orientation="horizontal">
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="19px"
-            android:text="旧密码:"
-            android:textColor="#666666"
-            android:textSize="28px" />
-
-
-        <EditText
-            android:id="@+id/etOldPsw"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="46px"
-            android:background="#fff"
-            android:hint="123456465"
-            android:inputType="textPassword"
-            android:textColor="#333333"
-            android:textSize="30px" />
-
-
-        <View
-            android:layout_width="0px"
-            android:layout_height="match_parent"
-            android:layout_weight="1" />
-
-
-        <CheckBox
-            android:id="@+id/cbOld"
-            android:layout_width="45px"
-            android:checked="true"
-            android:layout_height="28px"
-            android:layout_marginRight="20px"
-            android:background="@drawable/selector_psw_visible"
-            android:button="@null" />
-
-    </com.zhy.autolayout.AutoLinearLayout>
+        android:paddingBottom="30px"
+        android:paddingLeft="37px"
+        android:paddingTop="30px"
+        android:inputType="textPassword"
+        android:hint="请输入原密码"
+        android:textColor="#999999"
+        android:textSize="28px" />
 
     <View
         android:layout_width="match_parent"
         android:layout_height="1px"
-        android:background="#e0dad5"
-        android:layout_marginLeft="40px"
-        android:layout_marginRight="40px" />
+        android:layout_marginLeft="20px"
+        android:layout_marginRight="20px"
+        android:background="#d9d3ce" />
 
-
-    <com.zhy.autolayout.AutoLinearLayout
+    <EditText
+        android:id="@+id/etNewPsw"
         android:layout_width="match_parent"
-        android:layout_height="101px"
-
-        android:layout_marginLeft="40px"
-        android:layout_marginRight="40px"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
         android:background="#fff"
-        android:gravity="center_vertical"
-        android:orientation="horizontal">
+        android:paddingBottom="30px"
+        android:paddingLeft="37px"
+        android:paddingTop="30px"
+        android:hint="请输入新密码"
+        android:textColor="#999999"
+        android:textSize="28px" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="19px"
-            android:text="旧密码:"
-            android:textColor="#666666"
-            android:textSize="28px" />
-
-
-        <EditText
-            android:id="@+id/etPsw"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="46px"
-            android:background="#fff"
-            android:hint="123456465"
-            android:inputType="textPassword"
-            android:textColor="#333333"
-            android:textSize="30px" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="20px"
+        android:layout_marginRight="20px"
+        android:background="#d9d3ce" />
 
 
-        <View
-            android:layout_width="0px"
-            android:layout_height="match_parent"
-            android:layout_weight="1" />
+    <EditText
+        android:id="@+id/etConfirmNewPsw"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+
+        android:paddingBottom="30px"
+        android:paddingLeft="37px"
+        android:paddingTop="30px"
+        android:inputType="textPassword"
+        android:hint="请确认新密码"
+        android:textColor="#999999"
+        android:textSize="28px" />
 
 
-        <CheckBox
-            android:id="@+id/cbNew"
-            android:layout_width="45px"
-            android:layout_height="28px"
-            android:layout_marginRight="20px"
-            android:background="@drawable/selector_psw_visible"
-            android:button="@null" />
 
-    </com.zhy.autolayout.AutoLinearLayout>
-
+    <include layout="@layout/horizontal_split_line" />
 
     <Button
-        android:id="@+id/btnComfirmReset"
+        android:id="@+id/btnResetPsw"
         android:layout_width="match_parent"
-        android:layout_height="88px"
-        android:layout_marginLeft="40px"
-        android:layout_marginRight="40px"
-        android:layout_marginTop="72px"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30px"
+        android:layout_marginRight="30px"
+        android:layout_marginTop="62px"
         android:background="#fd7801"
-        android:text="确认修改"
+        android:paddingBottom="24px"
+        android:paddingTop="24px"
+        android:text="修改密码"
         android:textColor="#FFF"
-        android:textSize="30px" />
+        android:textSize="28px" />
 
 
 </LinearLayout>

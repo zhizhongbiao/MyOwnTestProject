@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/ivAvatar"
+        android:layout_width="90px"
+        android:layout_height="90px"
+        android:layout_marginLeft="20px"
+        android:layout_marginTop="20px"
+        android:src="@mipmap/ic_launcher_round"
+        app:layout_auto_basewidth="height" />
+
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/ivAvatar"
+        android:layout_marginLeft="10px"
+        android:background="#FFF"
+        android:layout_marginRight="30px"
+        android:layout_toRightOf="@+id/ivAvatar"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvMsgType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="39px"
+            android:layout_marginTop="18px"
+            android:text="报备客户"
+            android:textColor="#333333"
+            android:textSize="28px" />
+
+        <TextView
+            android:id="@+id/tvMsgTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="39px"
+            android:layout_marginTop="15px"
+            android:text="2017-05-01   12:00:00"
+            android:textColor="#999999"
+            android:textSize="20px" />
+
+        <TextView
+            android:id="@+id/tvMsg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="39px"
+            android:layout_marginTop="15px"
+            android:text="绝对是放假了打瞌睡放假了"
+            android:textColor="#999999"
+            android:textSize="24px" />
+
+        <TextView
+            android:id="@+id/tvClient"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="39px"
+            android:layout_marginTop="15px"
+            android:text="客户:李白            电话:15954533"
+            android:textColor="#999999"
+            android:textSize="24px" />
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="30px"
+            android:layout_marginRight="30px"
+            android:layout_marginTop="20px"
+            android:background="@color/splitLineColor" />
+
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:id="@+id/llMsgDetail"
+
+            >
+
+            <TextView
+                android:id="@+id/tvMsgDe"
+                android:layout_width="0px"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="39px"
+                android:layout_marginTop="18px"
+                android:text="查看详情"
+                android:textColor="#333333"
+                android:layout_marginBottom="24px"
+                android:textSize="24px" />
+
+
+            <ImageView
+                android:src="@mipmap/unfold_right"
+                android:layout_width="16px"
+                android:layout_marginRight="30px"
+                android:layout_height="26px" />
+
+        </com.zhy.autolayout.AutoLinearLayout>
+
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+
+</RelativeLayout>

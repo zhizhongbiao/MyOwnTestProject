@@ -1,0 +1,381 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="90px"
+        android:layout_marginTop="21px"
+        android:background="#FFF"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="29px"
+            android:layout_weight="1"
+            android:text="签约金额:"
+            android:textColor="#666666"
+            android:textSize="28px" />
+
+        <TextView
+            android:id="@+id/tvSignMoney"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="29px"
+            android:text="2500000元"
+            android:textColor="#333333"
+            android:textSize="28px" />
+
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="30px"
+        android:layout_marginRight="30px"
+        android:background="@color/splitLineColor" />
+
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="90px"
+
+        android:background="#FFF"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="29px"
+            android:layout_weight="1"
+            android:text="佣金总额:"
+            android:textColor="#666666"
+            android:textSize="28px" />
+
+        <TextView
+            android:id="@+id/tvTotalCommission"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="29px"
+            android:text="2500000元"
+            android:textColor="#333333"
+            android:textSize="28px" />
+
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="21px"
+        android:background="@color/BigSplitLineColor"
+
+        />
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="90px"
+
+        android:background="#FFF"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="29px"
+            android:text="推荐房源:"
+            android:textColor="#666666"
+            android:textSize="28px" />
+
+
+        <TextView
+            android:id="@+id/tvRecommandProperty"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15px"
+            android:layout_weight="1"
+            android:text="汇房地产"
+            android:textColor="#333333"
+            android:textSize="28px" />
+
+        <TextView
+            android:id="@+id/tvRecommandCommission"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="29px"
+            android:text="2500000元"
+            android:textColor="#333333"
+            android:textSize="28px" />
+
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <include layout="@layout/horizontal_split_line" />
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="90px"
+
+        android:background="#FFF"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="29px"
+            android:text="房源复盘:"
+            android:textColor="#666666"
+            android:textSize="28px" />
+
+
+        <TextView
+            android:id="@+id/tvPropertyAlive"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15px"
+            android:layout_weight="1"
+            android:text="汇房地产"
+            android:textColor="#333333"
+            android:textSize="28px" />
+
+        <TextView
+            android:id="@+id/tvAliveCommission"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="29px"
+            android:text="2500000元"
+            android:textColor="#333333"
+            android:textSize="28px" />
+
+
+    </com.zhy.autolayout.AutoLinearLayout>
+    <include layout="@layout/horizontal_split_line" />
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="90px"
+
+        android:background="#FFF"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="29px"
+            android:text="房源钥匙:"
+            android:textColor="#666666"
+            android:textSize="28px" />
+
+
+        <TextView
+            android:id="@+id/tvPropertyKey"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15px"
+            android:layout_weight="1"
+            android:text="汇房地产"
+            android:textColor="#333333"
+            android:textSize="28px" />
+
+        <TextView
+            android:id="@+id/tvKeyCommission"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="29px"
+            android:text="2500000元"
+            android:textColor="#333333"
+            android:textSize="28px" />
+
+
+    </com.zhy.autolayout.AutoLinearLayout>
+    <include layout="@layout/horizontal_split_line" />
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="90px"
+
+        android:background="#FFF"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="29px"
+            android:text="房源独家:"
+            android:textColor="#666666"
+            android:textSize="28px" />
+
+
+        <TextView
+            android:id="@+id/tvPropertyUnique"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15px"
+            android:layout_weight="1"
+            android:text="汇房地产"
+            android:textColor="#333333"
+            android:textSize="28px" />
+
+        <TextView
+            android:id="@+id/tvUniqueCommission"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="29px"
+            android:text="2500000元"
+            android:textColor="#333333"
+            android:textSize="28px" />
+
+
+    </com.zhy.autolayout.AutoLinearLayout>
+    <include layout="@layout/horizontal_split_line" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="21px"
+        android:background="@color/BigSplitLineColor"
+
+        />
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="90px"
+
+        android:background="#FFF"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="29px"
+            android:text="推荐客户:"
+            android:textColor="#666666"
+            android:textSize="28px" />
+
+
+        <TextView
+            android:id="@+id/tvRecommandClient"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15px"
+            android:layout_weight="1"
+            android:text="张飞"
+            android:textColor="#333333"
+            android:textSize="28px" />
+
+        <TextView
+            android:id="@+id/tvRecommandClientCommission"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="29px"
+            android:text="2500000元"
+            android:textColor="#333333"
+            android:textSize="28px" />
+
+
+    </com.zhy.autolayout.AutoLinearLayout>
+    <include layout="@layout/horizontal_split_line" />
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="90px"
+
+        android:background="#FFF"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="29px"
+            android:text="带客成交:"
+            android:textColor="#666666"
+            android:textSize="28px" />
+
+
+        <TextView
+            android:id="@+id/tvCarryClient"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15px"
+            android:layout_weight="1"
+            android:text="汇房地产"
+            android:textColor="#333333"
+            android:textSize="28px" />
+
+        <TextView
+            android:id="@+id/tvCarryClientCommission"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="29px"
+            android:text="2500000元"
+            android:textColor="#333333"
+            android:textSize="28px" />
+
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="21px"
+        android:background="@color/BigSplitLineColor"
+
+        />
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="90px"
+        android:layout_marginTop="21px"
+        android:background="#FFF"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="29px"
+            android:layout_weight="1"
+            android:text="其他奖金:"
+            android:textColor="#666666"
+            android:textSize="28px" />
+
+        <TextView
+            android:id="@+id/tvOtherReword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="29px"
+            android:text="2500000元"
+            android:textColor="#333333"
+            android:textSize="28px" />
+
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <include layout="@layout/horizontal_split_line" />
+
+</LinearLayout>

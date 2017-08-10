@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+
+    <ImageView
+        android:layout_width="168px"
+        android:layout_height="156px"
+        android:layout_marginTop="60px"
+        android:src="@mipmap/logo_person" />
+
+    <TextView
+        android:id="@+id/tvVesionCode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28px"
+        android:text="版本号 1.1.1"
+        android:textColor="#999999"
+        android:textSize="26px" />
+
+    <WebView
+        android:id="@+id/webView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40px"
+        android:layout_marginRight="40px"
+        android:layout_marginTop="78px" />
+
+</LinearLayout>

@@ -2,135 +2,76 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#fff"
+
     android:gravity="center_horizontal"
     android:orientation="vertical">
 
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="16px"
-        android:background="#f5f2f0" />
-
-    <com.zhy.autolayout.AutoLinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="100px"
-        android:gravity="center_vertical"
-        android:orientation="horizontal">
-
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="19px"
-            android:text="消息震动"
-            android:textColor="#666666"
-            android:textSize="30px" />
-
-        <View
-            android:layout_width="0px"
-            android:layout_height="match_parent"
-            android:layout_weight="1" />
-
-
-        <CheckBox
-            android:id="@+id/cbMsgVibrate"
-            android:layout_width="45px"
-            android:layout_height="28px"
-            android:layout_marginRight="50px"
-            android:background="@drawable/selector_psw_visible"
-            android:button="@null" />
-
-
-    </com.zhy.autolayout.AutoLinearLayout>
-
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="16px"
-        android:background="#f5f2f0" />
-
-    <com.zhy.autolayout.AutoLinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="100px"
-        android:gravity="center_vertical"
-        android:orientation="horizontal">
-
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="19px"
-            android:text="消息震动"
-            android:textColor="#666666"
-            android:textSize="30px" />
-
-        <View
-            android:layout_width="0px"
-            android:layout_height="match_parent"
-            android:layout_weight="1" />
-
-
-        <CheckBox
-            android:id="@+id/cbMsgNotify"
-            android:layout_width="45px"
-            android:layout_height="28px"
-            android:layout_marginRight="50px"
-            android:background="@drawable/selector_psw_visible"
-            android:button="@null"
-            android:checked="true" />
-
-
-    </com.zhy.autolayout.AutoLinearLayout>
-
-
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="16px"
-        android:background="#f5f2f0" />
-
-    <com.zhy.autolayout.AutoLinearLayout
-        android:id="@+id/llAbout"
-        android:layout_width="match_parent"
-        android:layout_height="100px"
-        android:gravity="center_vertical"
-        android:orientation="horizontal">
-
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="19px"
-            android:text="关于速卖通"
-            android:textColor="#666666"
-            android:textSize="30px" />
-
-        <View
-            android:layout_width="0px"
-            android:layout_height="match_parent"
-            android:layout_weight="1" />
-
-    </com.zhy.autolayout.AutoLinearLayout>
-
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="2px"
-        android:background="#d9d3ce" />
-
     <TextView
-        android:id="@+id/tvLogOut"
-        android:layout_width="wrap_content"
+        android:id="@+id/tvAccountSetting"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="37px"
-        android:layout_marginTop="120px"
-        android:text="退出登录"
-        android:textColor="#ff1d1d"
-        android:textSize="30px" />
+        android:layout_marginTop="21px"
+        android:background="#fff"
+        android:paddingBottom="30px"
+        android:paddingLeft="37px"
+        android:paddingTop="30px"
+        android:text="账号设置"
+        android:textColor="#333333"
+        android:textSize="28px" />
 
     <View
         android:layout_width="match_parent"
-        android:layout_height="2px"
+        android:layout_height="1px"
         android:layout_marginLeft="20px"
         android:layout_marginRight="20px"
         android:background="#d9d3ce" />
+
+    <TextView
+        android:id="@+id/tvMsgSetting"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+
+        android:paddingBottom="30px"
+        android:paddingLeft="37px"
+        android:paddingTop="30px"
+        android:text="消息设置"
+        android:textColor="#333333"
+        android:textSize="28px" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="22px"
+        android:background="#d9d3ce" />
+
+    <TextView
+        android:id="@+id/tvAbout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+
+        android:paddingBottom="30px"
+        android:paddingLeft="37px"
+        android:paddingTop="30px"
+        android:text="关于速卖通"
+        android:textColor="#333333"
+        android:textSize="28px" />
+
+    <include layout="@layout/horizontal_split_line" />
+
+    <Button
+        android:id="@+id/btnLogOut"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30px"
+        android:layout_marginRight="30px"
+        android:layout_marginTop="41px"
+        android:background="#fd7801"
+        android:paddingBottom="24px"
+        android:paddingTop="24px"
+        android:text="退出登录"
+        android:textColor="#FFF"
+        android:textSize="28px" />
 
 
 </LinearLayout>

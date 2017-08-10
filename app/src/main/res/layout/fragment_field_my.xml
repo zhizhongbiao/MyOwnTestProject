@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#cd9261">
+
+
+        <ImageView
+            android:id="@+id/ivMsg"
+            android:layout_width="48px"
+            android:layout_height="46px"
+            android:layout_marginLeft="42px"
+            android:layout_marginTop="25px"
+            android:src="@mipmap/ic_launcher_round" />
+
+
+        <ImageView
+            android:id="@+id/ivSetting"
+            android:layout_width="48px"
+            android:layout_height="48px"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="40px"
+            android:layout_marginTop="25px"
+            android:src="@mipmap/ic_launcher_round" />
+
+
+        <ImageView
+            android:id="@+id/ivLogo"
+            android:layout_width="180px"
+            android:layout_height="180px"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="80px"
+            android:src="@mipmap/logo_180" />
+
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ivLogo"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="73px"
+            android:text="东莞开发商"
+            android:textColor="#FFF"
+            android:textSize="44px" />
+
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvName"
+            android:layout_marginTop="53px"
+            android:background="#9c6639"
+            android:orientation="horizontal">
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_width="0px"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvProjectCount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ivLogo"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="18px"
+                    android:text="28个"
+                    android:textColor="#FFF"
+                    android:textSize="28px"
+
+                    />
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ivLogo"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="18px"
+                    android:layout_marginTop="14px"
+                    android:text="项目数量"
+                    android:textColor="#FFF"
+                    android:textSize="28px"
+
+                    />
+
+
+            </com.zhy.autolayout.AutoLinearLayout>
+
+
+            <View
+                android:layout_width="1px"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="20px"
+                android:layout_marginTop="20px"
+                android:background="#e0dad5" />
+
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_width="0px"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvClientCount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ivLogo"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="18px"
+                    android:text="28个"
+                    android:textColor="#FFF"
+                    android:textSize="28px"
+
+                    />
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ivLogo"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="18px"
+                    android:layout_marginTop="14px"
+                    android:text="客源数量"
+                    android:textColor="#FFF"
+                    android:textSize="28px"
+
+                    />
+
+
+            </com.zhy.autolayout.AutoLinearLayout>
+
+
+            <View
+                android:layout_width="1px"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="20px"
+                android:layout_marginTop="20px"
+                android:background="#e0dad5" />
+
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_width="0px"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvHouseCount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ivLogo"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="18px"
+                    android:text="28个"
+                    android:textColor="#FFF"
+                    android:textSize="28px"
+
+                    />
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ivLogo"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="18px"
+                    android:layout_marginTop="14px"
+                    android:text="房源数量"
+                    android:textColor="#FFF"
+                    android:textSize="28px"
+
+                    />
+
+
+            </com.zhy.autolayout.AutoLinearLayout>
+
+
+        </com.zhy.autolayout.AutoLinearLayout>
+
+
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tvSignUneffective"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="28px"
+            android:layout_marginLeft="38px"
+            android:layout_marginTop="28px"
+            android:text="佣金结算:"
+            android:textColor="#333333"
+            android:textSize="30px" />
+
+
+        <ImageView
+            android:id="@+id/ivGoIn"
+            android:layout_width="15px"
+            android:layout_height="25px"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="40px"
+            android:layout_marginTop="34px"
+            android:src="@mipmap/unfold_right" />
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+
+    <include layout="@layout/horizontal_split_line" />
+
+</LinearLayout>

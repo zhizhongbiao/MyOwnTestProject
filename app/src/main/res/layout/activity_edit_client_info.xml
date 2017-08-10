@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80px"
+        android:background="#FFF"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="28px"
+            android:text="客户姓名"
+            android:textColor="#333333"
+            android:textSize="28px" />
+
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="10px"
+            android:layout_marginLeft="28px"
+            android:layout_marginTop="10px"
+            android:background="@color/splitLineColor" />
+
+
+        <EditText
+            android:id="@+id/etClientName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30px"
+            android:background="#fff"
+            android:hint="李白"
+            android:inputType="phone"
+            android:textColor="#999999"
+            android:textSize="28px" />
+
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <include layout="@layout/horizontal_split_line" />
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80px"
+        android:background="#FFF"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="28px"
+            android:text="联系电话"
+            android:textColor="#333333"
+            android:textSize="28px" />
+
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="10px"
+            android:layout_marginLeft="28px"
+            android:layout_marginTop="10px"
+            android:background="@color/splitLineColor" />
+
+
+        <EditText
+            android:id="@+id/etClientPhone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30px"
+            android:background="#fff"
+            android:hint="159124545"
+            android:inputType="phone"
+            android:textColor="#999999"
+            android:textSize="28px" />
+
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <include layout="@layout/horizontal_split_line" />
+
+    <Button
+        android:id="@+id/btnComfirmCommite"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30px"
+        android:layout_marginRight="30px"
+        android:layout_marginTop="39px"
+        android:background="#fd7801"
+        android:paddingBottom="24px"
+        android:paddingTop="24px"
+        android:text="确认提交"
+        android:textColor="#FFF"
+        android:textSize="28px" />
+
+</LinearLayout>

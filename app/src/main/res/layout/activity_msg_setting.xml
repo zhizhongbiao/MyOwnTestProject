@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#d9d3ce" />
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="11px"
+        android:background="#fff"
+        android:orientation="horizontal">
+
+        <TextView
+
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+
+            android:paddingBottom="30px"
+            android:paddingLeft="30px"
+            android:paddingTop="30px"
+            android:text="消息铃声"
+            android:textColor="#333333"
+            android:textSize="28px" />
+
+
+        <CheckBox
+            android:id="@+id/cbMsgSound"
+            android:layout_width="120px"
+            android:layout_height="60px"
+            android:layout_marginRight="30px"
+            android:background="@drawable/selector_psw_visible"
+            android:button="@null" />
+
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="20px"
+        android:layout_marginRight="20px"
+        android:background="#d9d3ce" />
+
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="11px"
+        android:background="#fff"
+        android:orientation="horizontal">
+
+        <TextView
+
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+
+            android:paddingBottom="30px"
+            android:paddingLeft="30px"
+            android:paddingTop="30px"
+            android:text="消息震动"
+            android:textColor="#333333"
+            android:textSize="28px" />
+
+
+        <CheckBox
+            android:id="@+id/cbMsgVibrate"
+            android:layout_width="120px"
+            android:layout_height="60px"
+            android:layout_marginRight="30px"
+            android:background="@drawable/selector_psw_visible"
+            android:button="@null" />
+
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#d9d3ce" />
+
+
+</LinearLayout>

@@ -5,101 +5,66 @@
     android:orientation="vertical">
 
 
+    <EditText
+        android:id="@+id/etPhone"
+        android:layout_width="match_parent"
+        android:layout_height="101px"
+
+        android:layout_marginTop="21px"
+        android:background="#fff"
+        android:gravity="center_vertical"
+        android:hint="请输入手机号"
+        android:inputType="textPassword"
+        android:paddingLeft="39px"
+        android:textColor="#999999"
+        android:textSize="28px" />
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="20px"
+        android:layout_marginRight="20px"
+        android:background="#d9d3ce" />
+
+
     <com.zhy.autolayout.AutoLinearLayout
         android:layout_width="match_parent"
         android:layout_height="101px"
-        android:layout_marginLeft="40px"
-        android:layout_marginRight="40px"
-        android:layout_marginTop="62px"
+
+
         android:background="#fff"
         android:gravity="center_vertical"
         android:orientation="horizontal">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="19px"
-            android:text="手机号:"
-            android:textColor="#666666"
-            android:textSize="28px" />
-
 
         <EditText
-            android:id="@+id/etPhone"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="46px"
-            android:background="#fff"
-            android:hint="123456465"
-            android:inputType="textPassword"
-            android:textColor="#333333"
-            android:textSize="30px" />
-
-
-        <View
+            android:id="@+id/etSMSCode"
             android:layout_width="0px"
             android:layout_height="match_parent"
-            android:layout_weight="1" />
+            android:layout_weight="1"
+            android:background="#fff"
+            android:gravity="center_vertical"
+            android:hint="请输入验证码"
+            android:inputType="textPassword"
+            android:paddingLeft="39px"
+            android:textColor="#999999"
+            android:textSize="28px" />
+
 
         <TextView
             android:id="@+id/tvSendSMSCode"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginRight="18px"
-            android:text="发送验证码"
-            android:textColor="#fd7801"
-            android:textSize="28px" />
-
-
-
-    </com.zhy.autolayout.AutoLinearLayout>
-
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="1px"
-
-        android:layout_marginLeft="40px"
-        android:layout_marginRight="40px" />
-
-
-    <com.zhy.autolayout.AutoLinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="101px"
-
-        android:layout_marginLeft="40px"
-        android:layout_marginRight="40px"
-        android:background="#fff"
-        android:gravity="center_vertical"
-        android:orientation="horizontal">
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="19px"
-            android:text="验证码:"
-            android:textColor="#666666"
-            android:textSize="28px" />
-
-
-        <EditText
-            android:id="@+id/etSMSCode"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="46px"
-            android:background="#fff"
-            android:hint="123456465"
-            android:inputType="textPassword"
-            android:textColor="#333333"
-            android:textSize="30px" />
-
-
-        <View
-            android:layout_width="0px"
-            android:layout_height="match_parent"
-            android:layout_weight="1" />
-
-
-
+            android:layout_marginRight="40px"
+            android:paddingBottom="16px"
+            android:paddingLeft="22px"
+            android:paddingRight="22px"
+            android:paddingTop="16px"
+            android:text="获取验证码"
+            android:background="@drawable/shape_app_color_bg"
+            android:textColor="#FFF"
+            android:textSize="24px" />
 
 
     </com.zhy.autolayout.AutoLinearLayout>
@@ -108,13 +73,15 @@
     <Button
         android:id="@+id/btnLogin"
         android:layout_width="match_parent"
-        android:layout_height="88px"
-        android:layout_marginLeft="40px"
-        android:layout_marginRight="40px"
-        android:layout_marginTop="72px"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30px"
+        android:layout_marginRight="30px"
+        android:layout_marginTop="61px"
         android:background="#fd7801"
+        android:paddingBottom="28px"
+        android:paddingTop="28px"
         android:text="立即登录"
         android:textColor="#FFF"
-        android:textSize="30px" />
+        android:textSize="28px" />
 
 </LinearLayout>
