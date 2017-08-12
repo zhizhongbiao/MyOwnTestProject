@@ -17,6 +17,9 @@ public class ClientSearchActivity extends BaseActivity {
 
     @Override
     protected void initView(Bundle savedInstanceState, ToolbarHolder toolbarHolder, Intent intent) {
+intt();
+    }
 
+    private void intt() {
     }
 }
