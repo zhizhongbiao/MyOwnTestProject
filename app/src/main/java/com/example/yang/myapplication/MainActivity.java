@@ -42,7 +42,7 @@ public class MainActivity extends BaseActivity {
      * 清空栈顶 进入主页
      *
      * @param context
-     * @return
+     * @return intent
      */
     public static Intent getIntent(Context context) {
         return new Intent(context, MainActivity.class).addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_SINGLE_TOP);
@@ -56,6 +56,7 @@ public class MainActivity extends BaseActivity {
     @Override
     protected void initView(Bundle savedInstanceState, BaseActivity.ToolbarHolder toolbarHolder, Intent intent) {
         initTab();
+//
     }
 
     @Titles
