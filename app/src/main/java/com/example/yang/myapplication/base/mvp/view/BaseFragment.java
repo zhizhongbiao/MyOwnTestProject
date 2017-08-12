@@ -1,21 +1,23 @@
-package com.example.yang.myapplication.base.ui;
+package com.example.yang.myapplication.base.mvp.view;
 
 
 import android.os.Bundle;
-import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
 import butterknife.ButterKnife;
 import butterknife.Unbinder;
+import me.yokeyword.fragmentation.SupportFragment;
 
 
 /**
- * Created by Alv_chi on 2017/2/20.
+ * Author : WaterFlower.
+ * Created on 2017/8/11.
+ * Desc :
  */
 
-public abstract class BaseFragment extends Fragment {
+public abstract class BaseFragment extends SupportFragment {
     private Unbinder mUnbinder;
     private View contentView;
 

@@ -2,16 +2,15 @@ package com.example.yang.myapplication.project.ui.activity;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
-import android.support.v7.app.AppCompatActivity;
 
 import com.example.yang.myapplication.R;
-import com.example.yang.myapplication.base.ui.BaseActivity;
+import com.example.yang.myapplication.base.mvp.view.BaseActivity;
 
 /**
- * Created by yang on 2017/8/7.
+ * Author : WaterFlower.
+ * Created on 2017/8/11.
+ * Desc :
  */
-
 public class SearchActivity extends BaseActivity {
 
 
@@ -21,7 +20,7 @@ public class SearchActivity extends BaseActivity {
     }
 
     @Override
-    protected void initView(Bundle savedInstanceState, ToolbarHolder toolbarHolder, Intent intent) {
+    protected void initView(Bundle savedInstanceState, ToolbarHolder tbHolder, Intent intent) {
 
     }
 

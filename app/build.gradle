@@ -1,6 +1,7 @@
 apply plugin: 'com.android.application'
 apply plugin: 'android-apt'
 
+
 android {
     compileSdkVersion 26
     buildToolsVersion "26.0.1"
@@ -18,6 +19,22 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+
+
+
+
+    //这段代码的意思是强制改变所有引用com.android.support 版本为26.0.+。
+    configurations.all {
+        resolutionStrategy.eachDependency { DependencyResolveDetails details ->
+            def requested = details.requested
+            if (requested.group == 'com.android.support') {
+                if (!requested.name.startsWith("multidex")) {
+                    details.useVersion '26.0.+'
+                }
+            }
+        }
+    }
+
 }
 
 dependencies {
@@ -32,6 +49,7 @@ dependencies {
 
     compile 'com.android.support:recyclerview-v7:26.0.+'
     compile 'com.android.support:design:26.0.+'
+    compile 'com.google.zxing:core:3.2.1'
 
     //Butterknife
     compile 'com.jakewharton:butterknife:8.4.0'
@@ -42,4 +60,36 @@ dependencies {
 
     //JpTabBar
     compile 'com.jpeng:JPTabBar:1.2.3'
+
+
+
+    /*权限*/
+    compile 'com.github.hotchemi:permissionsdispatcher:2.3.2'
+    apt 'com.github.hotchemi:permissionsdispatcher-processor:2.3.2'
+    annotationProcessor 'com.github.hotchemi:permissionsdispatcher-processor:2.3.2'
+    //UI布局
+    compile 'me.yokeyword:fragmentation:0.9.0'
+    /*图片*/
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+    compile 'com.jph.takephoto:takephoto_library:4.0.3'
+    /*json*/
+    compile 'com.alibaba:fastjson:1.1.57.android'
+    /*net*/
+    compile 'com.lzy.net:okgo:2.1.4'
+    compile 'org.greenrobot:eventbus:3.0.0'
+    /*dialog*/
+    compile 'com.orhanobut:dialogplus:1.11@aar'
+//    compile 'com.afollestad.material-dialogs:core:0.9.4.2'
+    compile 'com.afollestad.material-dialogs:core:0.9.4.5'
+
+    /*bugly*/
+    compile 'com.tencent.bugly:crashreport_upgrade:latest.release'
+    compile 'com.umeng.analytics:analytics:latest.integration'
+    /*rx*/
+    compile 'io.reactivex:rxjava:1.2.9'
+    compile 'io.reactivex:rxandroid:1.2.1'
+    /*压缩*/
+    compile 'top.zibin:Luban:1.0.9'
+    /*recycleradapter*/
+    compile 'com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.9'
 }

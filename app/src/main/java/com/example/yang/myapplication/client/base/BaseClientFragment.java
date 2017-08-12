@@ -2,7 +2,7 @@ package com.example.yang.myapplication.client.base;
 
 import android.os.Bundle;
 
-import com.example.yang.myapplication.base.ui.BaseFragment;
+import com.example.yang.myapplication.base.mvp.view.BaseFragment;
 
 /**
  * Created by yang on 2017/8/8.

@@ -3,7 +3,7 @@ package com.example.yang.myapplication.client.ui.fragment;
 import android.os.Bundle;
 
 import com.example.yang.myapplication.R;
-import com.example.yang.myapplication.base.ui.BaseFragment;
+import com.example.yang.myapplication.base.mvp.view.BaseFragment;
 
 /**
  * Created by yang on 2017/8/7.

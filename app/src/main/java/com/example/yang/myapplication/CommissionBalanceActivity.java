@@ -3,7 +3,7 @@ package com.example.yang.myapplication;
 import android.content.Intent;
 import android.os.Bundle;
 
-import com.example.yang.myapplication.base.ui.BaseActivity;
+import com.example.yang.myapplication.base.mvp.view.BaseActivity;
 
 public class CommissionBalanceActivity extends BaseActivity {
 
@@ -14,7 +14,7 @@ public class CommissionBalanceActivity extends BaseActivity {
     }
 
     @Override
-    protected void initView(Bundle savedInstanceState, ToolbarHolder toolbarHolder, Intent intent) {
+    protected void initView(Bundle savedInstanceState, ToolbarHolder tbHolder, Intent intent) {
 
     }
 

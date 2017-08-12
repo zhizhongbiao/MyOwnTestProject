@@ -2,14 +2,13 @@ package com.example.yang.myapplication;
 
 import android.content.Context;
 import android.content.Intent;
-import android.graphics.Color;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.view.ViewPager;
 
 
 import com.example.yang.myapplication.base.adpter.TabBarAdapter;
-import com.example.yang.myapplication.base.ui.BaseActivity;
+import com.example.yang.myapplication.base.mvp.view.BaseActivity;
 import com.example.yang.myapplication.client.ui.fragment.ClientFragment;
 import com.example.yang.myapplication.house.ui.fragment.HouseFragment;
 import com.example.yang.myapplication.my.ui.fragment.MyFragment;
@@ -25,7 +24,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 import butterknife.BindView;
-import butterknife.ButterKnife;
 
 public class MainActivity extends BaseActivity {
 
@@ -54,7 +52,7 @@ public class MainActivity extends BaseActivity {
     }
 
     @Override
-    protected void initView(Bundle savedInstanceState, BaseActivity.ToolbarHolder toolbarHolder, Intent intent) {
+    protected void initView(Bundle savedInstanceState, BaseActivity.ToolbarHolder tbHolder, Intent intent) {
         initTab();
     }
 

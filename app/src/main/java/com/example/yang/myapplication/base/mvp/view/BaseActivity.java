@@ -1,11 +1,10 @@
-package com.example.yang.myapplication.base.ui;
+package com.example.yang.myapplication.base.mvp.view;
 
 
 import android.content.Context;
 import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 import android.util.AttributeSet;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -21,8 +20,15 @@ import com.zhy.autolayout.AutoRelativeLayout;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.Unbinder;
+import me.yokeyword.fragmentation.SupportActivity;
 
-public abstract class BaseActivity extends AppCompatActivity {
+/**
+ * Author : WaterFlower.
+ * Created on 2017/8/11.
+ * Desc :
+ */
+
+public abstract class BaseActivity extends SupportActivity {
 
 
     private static final int DEFAULT_TOOLBAR = 1;
@@ -89,7 +95,7 @@ public abstract class BaseActivity extends AppCompatActivity {
      * @param savedInstanceState
      * @param intent
      */
-    protected abstract void initView(Bundle savedInstanceState,ToolbarHolder toolbarHolder, Intent intent);
+    protected abstract void initView(Bundle savedInstanceState,ToolbarHolder tbHolder, Intent intent);
 
     @Override
     public View onCreateView(String name, Context context, AttributeSet attrs) {
