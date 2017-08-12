@@ -56,6 +56,7 @@ public class MainActivity extends BaseActivity {
     @Override
     protected void initView(Bundle savedInstanceState, BaseActivity.ToolbarHolder toolbarHolder, Intent intent) {
         initTab();
+//
     }
 
     @Titles
