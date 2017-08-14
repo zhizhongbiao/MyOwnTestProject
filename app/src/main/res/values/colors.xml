@@ -4,6 +4,8 @@
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
 
+    <color name="appColor">#ff850b</color>
+    <color name="bgColor">#ebebeb</color>
     <color name="splitLineColor">#e0dad5</color>
     <color name="BigSplitLineColor">#f5f2f7</color>
 </resources>

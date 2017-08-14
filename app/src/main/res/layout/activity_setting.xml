@@ -42,7 +42,7 @@
     <View
         android:layout_width="match_parent"
         android:layout_height="22px"
-        android:background="#d9d3ce" />
+        android:background="@color/bgColor" />
 
     <TextView
         android:id="@+id/tvAbout"

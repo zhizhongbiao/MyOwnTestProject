@@ -148,13 +148,13 @@ public class MvpBasePresenter extends MvpPresenter<MvpView> implements Callback 
                     } else {
                         context = ((Fragment) getView()).getContext();
                     }
-                    //TODO WaterFlower注释的
+                    //TODO WaterFlower did this
 //                    Intent intent = new Intent(context, LoginActivity.class);
 //                    intent.setFlags(Intent.FLAG_ACTIVITY_SINGLE_TOP | Intent.FLAG_ACTIVITY_CLEAR_TOP);
 //                    context.startActivity(intent);
                     break;
                 case ResponseInfo.UN_SET_APP:
-                    //TODO WaterFlower我注释的
+                    //TODO WaterFlower did this
 //                    mParams.put("type", "MALL_MOBILE_ANDROID");
 //                    getData(ApiConfig.API_SET_CLIENT_TYPE, mParams, BaseVo.class);
                     break;

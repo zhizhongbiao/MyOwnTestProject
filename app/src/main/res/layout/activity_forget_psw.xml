@@ -10,22 +10,21 @@
         android:id="@+id/etPhone"
         android:layout_width="match_parent"
         android:layout_height="101px"
-
         android:layout_marginTop="21px"
         android:background="#fff"
         android:gravity="center_vertical"
         android:hint="请输入手机号"
         android:inputType="phone"
         android:paddingLeft="39px"
-        android:textColor="#999999"
-        android:textSize="28px" />
+        android:textColor="#b3b3b3"
+        android:textSize="30px" />
 
 
     <View
         android:layout_width="match_parent"
         android:layout_height="1px"
-        android:layout_marginLeft="20px"
-        android:layout_marginRight="20px"
+        android:layout_marginLeft="40px"
+        android:layout_marginRight="40px"
         android:background="#d9d3ce" />
 
 
@@ -47,10 +46,10 @@
             android:background="#fff"
             android:gravity="center_vertical"
             android:hint="请输入验证码"
-            android:inputType="number"
+            android:inputType="phone"
             android:paddingLeft="39px"
-            android:textColor="#999999"
-            android:textSize="28px" />
+            android:textColor="#b3b3b3"
+            android:textSize="30px" />
 
 
         <TextView
@@ -58,17 +57,51 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginRight="40px"
+            android:background="@drawable/shape_app_color_bg"
             android:paddingBottom="16px"
             android:paddingLeft="22px"
             android:paddingRight="22px"
             android:paddingTop="16px"
             android:text="获取验证码"
-            android:background="@drawable/shape_app_color_bg"
             android:textColor="#FFF"
-            android:textSize="24px" />
+            android:textSize="26px" />
 
 
     </com.zhy.autolayout.AutoLinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="40px"
+        android:layout_marginRight="40px"
+        android:background="#d9d3ce" />
+
+    <EditText
+        android:id="@+id/etNewPsw"
+        android:layout_width="match_parent"
+        android:layout_height="101px"
+
+        android:background="#fff"
+        android:gravity="center_vertical"
+        android:hint="请输入新密码"
+        android:inputType="phone"
+        android:paddingLeft="39px"
+        android:textColor="#b3b3b3"
+        android:textSize="30px" />
+
+    <EditText
+        android:id="@+id/etEnsureNewPsw"
+        android:layout_width="match_parent"
+        android:layout_height="101px"
+
+        android:background="#fff"
+        android:gravity="center_vertical"
+        android:hint="请确认新密码"
+        android:inputType="phone"
+        android:paddingLeft="39px"
+        android:textColor="#b3b3b3"
+        android:textSize="30px" />
 
 
     <Button

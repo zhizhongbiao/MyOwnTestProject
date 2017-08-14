@@ -23,10 +23,11 @@
         android:id="@+id/tabbar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="16px"
-        android:layout_marginTop="20px"
+        android:layout_marginBottom="15px"
+        android:layout_marginTop="12px"
         app:TabMargin="8px"
-        app:TabSelectColor="#fe9e41"
+        app:TabNormalColor="#666666"
+        app:TabSelectColor="@color/appColor"
         app:TabTextSize="12sp" />
 
 
