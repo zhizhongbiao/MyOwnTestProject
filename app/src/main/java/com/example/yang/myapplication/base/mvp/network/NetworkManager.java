@@ -97,14 +97,6 @@ public class NetworkManager {
         postRequest.execute(new ResponseCallback(callback, requestInfo));
     }
 
-    public void upload(String url, ArrayMap<String, Serializable> params, FileCallback callback) {
-        if (params == null) {
-            return;
-        }
-
-        setParam(params, OkGo.post(url)).execute(callback);
-    }
-
     private PostRequest setParam(ArrayMap<String, Serializable> params, PostRequest post) {
         if (params == null) {
             return post;
@@ -119,6 +111,15 @@ public class NetworkManager {
         }
 
         return post;
+    }
+
+
+    public void upload(String url, ArrayMap<String, Serializable> params, FileCallback callback) {
+        if (params == null) {
+            return;
+        }
+
+        setParam(params, OkGo.post(url)).execute(callback);
     }
 
     public void download(String url, ArrayMap<String, Serializable> params, FileCallback callback) {
@@ -183,22 +184,60 @@ public class NetworkManager {
         }
 
 
+        @Override
+        public void onSuccess(String content, Call call, okhttp3.Response response) {
+            ResponseInfo responseInfo;
+            if (response.isSuccessful()) {
+                String type = response.body().contentType().subtype();
+                if (type.equals("json")) {
+                    dispatchJsonResult(content, response.request().url().url().getPath(), type);
+                } else {
+                    responseInfo = new ResponseInfo(ResponseInfo.FAILURE);
+                    responseInfo.setResponseType(type);
+                    responseInfo.setUrl(response.request().url().url().getPath());
+                    responseInfo.setMsg("无法解析请求结果");
+                    try {
+                        responseInfo.setRawData(response.body().string());
+                    } catch (IOException e) {
+                        e.printStackTrace();
+                    }
+                    DataManager.getDefault().postCallback(callback, responseInfo);
+                }
+            } else {
+                responseInfo = new ResponseInfo(ResponseInfo.FAILURE);
+                responseInfo.setState(ResponseInfo.SERVER_UNAVAILABLE);
+                DataManager.getDefault().postCallback(callback, responseInfo);
+            }
+        }
+
+
+        /**
+         * 数据派发
+         *
+         * @param response
+         * @param url
+         * @param type
+         */
         private void dispatchJsonResult(String response, String url, String type) {
             ResponseInfo responseInfo;
             try {
                 JSONObject jsonObject = JSON.parseObject(response);
-                responseInfo = new ResponseInfo(jsonObject.getIntValue("code"), jsonObject.getString("msg"));
+//                responseInfo = new ResponseInfo(jsonObject.getIntValue("code"), jsonObject.getString("msg"));
+                responseInfo = new ResponseInfo(jsonObject.getIntValue("status"), jsonObject.getString("msg"));
                 responseInfo.setResponseType(type);
                 url = url.substring(1, url.length());
                 responseInfo.setUrl(url);
                 String data = jsonObject.getString("data");
-                LogUtils.d("url   "+url+"  code  "+jsonObject.getIntValue("code")+"   data: " + data);
+//                LogUtils.d("url   "+url+"  code  "+jsonObject.getIntValue("code")+"   data: " + data);
+                LogUtils.d("url   " + url + "  status  " + jsonObject.getIntValue("status") + "   data: " + data);
                 if (responseInfo.getState() != ResponseInfo.SUCCESS) {
                     DataManager.getDefault().postCallback(callback, responseInfo);
                     return;
                 }
 
-                BaseVo baseVo = BaseVo.parseDataVo(data, requestInfo.getDataClass());
+//                BaseVo baseVo = BaseVo.parseDataVo(data, requestInfo.getDataClass());
+                BaseVo baseVo = BaseVo.parseDataVo(jsonObject.toJSONString(), requestInfo.getDataClass());
+
                 if (responseInfo.getState() != ResponseInfo.SUCCESS && baseVo == null) {
                     responseInfo.setState(ResponseInfo.JSON_PARSE_ERROR);
                     responseInfo.setMsg("请求结果数据解析失败！");
@@ -227,31 +266,6 @@ public class NetworkManager {
         }
 
 
-        @Override
-        public void onSuccess(String content, Call call, okhttp3.Response response) {
-            ResponseInfo responseInfo;
-            if (response.isSuccessful()) {
-                String type = response.body().contentType().subtype();
-                if (type.equals("json")) {
-                    dispatchJsonResult(content, response.request().url().url().getPath(), type);
-                } else {
-                    responseInfo = new ResponseInfo(ResponseInfo.FAILURE);
-                    responseInfo.setResponseType(type);
-                    responseInfo.setUrl(response.request().url().url().getPath());
-                    responseInfo.setMsg("无法解析请求结果");
-                    try {
-                        responseInfo.setRawData(response.body().string());
-                    } catch (IOException e) {
-                        e.printStackTrace();
-                    }
-                    DataManager.getDefault().postCallback(callback, responseInfo);
-                }
-            } else {
-                responseInfo = new ResponseInfo(ResponseInfo.FAILURE);
-                responseInfo.setState(ResponseInfo.SERVER_UNAVAILABLE);
-                DataManager.getDefault().postCallback(callback, responseInfo);
-            }
-        }
     }
 
 }

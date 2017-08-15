@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">速卖通II</string>
+
+
+
+
+    <string name="pulling">下拉刷新</string>
+    <string name="pulling_refresh">松开加载</string>
+    <string name="pulling_refreshing">正在加载</string>
+    <string name="pulling_refreshfinish">加载完成</string>
 </resources>

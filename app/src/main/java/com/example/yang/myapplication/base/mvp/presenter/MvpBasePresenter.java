@@ -28,6 +28,13 @@ public class MvpBasePresenter extends MvpPresenter<MvpView> implements Callback 
         getData(url, params, null);
     }
 
+    public void getData(String url, Class<? extends BaseVo> dataClass) {
+        getData(url, null, dataClass);
+    }
+
+    public void postData(String url, ArrayMap<String, Serializable> params) {
+        postData(url, params, null);
+    }
 
     public void getData(String url, ArrayMap<String, Serializable> params, Class<? extends BaseVo> dataClass) {
         if (isViewAttached() && needDialog && requestCount == 0) {
@@ -42,17 +49,14 @@ public class MvpBasePresenter extends MvpPresenter<MvpView> implements Callback 
         requestCount++;
     }
 
-    public void getData(String url, Class<? extends BaseVo> dataClass) {
-        getData(url, null, dataClass);
+
+
+
+    public void postData(String url, Class<? extends BaseVo> dataClass) {
+        postData(url, null, dataClass);
     }
 
-    public void postData(String url, ArrayMap<String, Serializable> params) {
-        postData(url, params, null);
-    }
 
-    /**
-     *
-     */
     public void postData(String url, ArrayMap<String, Serializable> params, Class<? extends BaseVo> dataClass) {
         if (isViewAttached() && needDialog && requestCount == 0) {
             getView().onLoading();
@@ -75,12 +79,8 @@ public class MvpBasePresenter extends MvpPresenter<MvpView> implements Callback 
         return MainApplication.getMainPreferences();
     }
 
-    /**
-     *
-     */
-    public void postData(String url, Class<? extends BaseVo> dataClass) {
-        postData(url, null, dataClass);
-    }
+
+
 
 
     public void syncDataInDB(String url, ArrayMap<String, Serializable> params, Class<? extends BaseVo> dataVoClass) {

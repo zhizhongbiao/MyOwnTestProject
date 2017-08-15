@@ -25,7 +25,7 @@
         android:text="付英华动画华府"
         android:paddingLeft="18px"
         android:textColor="#333333"
-        android:textSize="30px" />
+        android:textSize="32px" />
 
     <TextView
         android:id="@+id/tvEstateLocate"
@@ -33,10 +33,11 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/ivEstate"
         android:layout_marginTop="27px"
+        android:layout_marginLeft="14px"
         android:layout_toRightOf="@+id/etEstateName"
         android:text="(南城)"
-        android:textColor="#666666"
-        android:textSize="30px" />
+        android:textColor="#999999"
+        android:textSize="28px" />
 
     <TextView
         android:id="@+id/tvEstatePrice"
@@ -46,8 +47,8 @@
         android:layout_marginTop="29px"
         android:layout_toLeftOf="@+id/tvPriceUnit"
         android:text="10000"
-        android:textColor="#fd7801"
-        android:textSize="30px" />
+        android:textColor="@color/appColor"
+        android:textSize="32px" />
 
 
     <TextView
@@ -59,7 +60,7 @@
         android:layout_marginTop="30px"
         android:text="元/方"
         android:paddingRight="18px"
-        android:textColor="#fd7801"
-        android:textSize="24px" />
+        android:textColor="#999999"
+        android:textSize="28px" />
 
 </RelativeLayout>

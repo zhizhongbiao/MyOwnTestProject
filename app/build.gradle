@@ -91,5 +91,5 @@ dependencies {
     /*压缩*/
     compile 'top.zibin:Luban:1.0.9'
     /*recycleradapter*/
-    compile 'com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.9'
+    compile 'com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.25'
 }

@@ -10,6 +10,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 
 import com.example.yang.myapplication.R;
+import com.example.yang.myapplication.base.MyApplication;
 import com.example.yang.myapplication.base.bean.LoginBean;
 import com.example.yang.myapplication.base.mvp.model.BaseVo;
 import com.example.yang.myapplication.base.mvp.network.ApiConfig;
@@ -48,7 +49,12 @@ public class LoginActivity extends MvpActivity<MvpBasePresenter> {
 
     @Override
     protected void initView(Bundle savedInstanceState, ToolbarHolder tbHolder, Intent intent) {
+        inti();
+    }
 
+    private void inti() {
+        etLoginPhone.setText("13826914162");
+        etLoginPsw.setText("888888");
     }
 
     @Override
@@ -58,10 +64,10 @@ public class LoginActivity extends MvpActivity<MvpBasePresenter> {
 
     @Override
     public void showContentView(String url, BaseVo dataVo) {
-
         if (url.contains(ApiConfig.API_LOGIN)) {
             ToastUtil.showShort("登录成功");
             startActivity(MainActivity.getIntent(this));
+            ((MyApplication) getApplication()).setLogin(true);
             finish();
         }
 
@@ -73,21 +79,23 @@ public class LoginActivity extends MvpActivity<MvpBasePresenter> {
         switch (view.getId()) {
             case R.id.btnLogin:
 
-                etLoginPhone.setText("13826914162");
-                etLoginPsw.setText("888888");
                 String loginPhone = etLoginPhone.getText().toString().trim();
                 String loginPsw = etLoginPsw.getText().toString().trim();
                 if (TextUtils.isEmpty(loginPhone) || TextUtils.isEmpty(loginPsw)) {
                     ToastUtil.showLong("账号和密码不符");
                     return;
                 }
-                ArrayMap<String, Serializable> params = new ArrayMap<>();
-                params.put("username", loginPhone);
-                params.put("password", loginPsw);
-                presenter.postData(ApiConfig.API_LOGIN, params, LoginBean.class);
+                login(loginPhone, loginPsw);
                 break;
             case R.id.tvForgetPsw:
                 break;
         }
+    }
+
+    private void login(String loginPhone, String loginPsw) {
+        ArrayMap<String, Serializable> params = new ArrayMap<>();
+        params.put("username", loginPhone);
+        params.put("password", loginPsw);
+        presenter.postData(ApiConfig.API_LOGIN, params, LoginBean.class);
     }
 }

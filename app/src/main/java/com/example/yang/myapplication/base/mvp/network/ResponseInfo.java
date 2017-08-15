@@ -5,8 +5,10 @@ import com.example.yang.myapplication.base.mvp.model.BaseVo;
 
 
 public class ResponseInfo {
-    public static final int SUCCESS = 0x0; //请求成功
-    public static final int FAILURE = -1; //请求出错
+//    public static final int SUCCESS = 0x0; //请求成功
+    public static final int SUCCESS = 1; //请求成功
+//    public static final int FAILURE = -1; //请求出错
+    public static final int FAILURE = 0; //请求出错
     public static final int SERVER_INTERNAL_ERROR = 500; //服务器出错
     public static final int SERVER_UNAVAILABLE = 404; //服务器接口无法访问
     public static final int TIME_OUT = -2; //请求超时

@@ -24,6 +24,7 @@ public class BaseVo implements Serializable {
      * @param jsonString
      */
     public static <T extends BaseVo> T parseDataVo(String jsonString, Class<T> dataClass) throws JSONException {
+
         if (TextUtils.isEmpty(jsonString) || dataClass == null) {
             return null;
         }

@@ -1,4 +1,4 @@
-package com.example.yang.myapplication.client.ui.fragment;
+package com.example.yang.myapplication.order.ui.fragment;
 
 import android.os.Bundle;
 
@@ -9,18 +9,19 @@ import com.example.yang.myapplication.base.mvp.view.BaseFragment;
  * Created by yang on 2017/8/7.
  */
 
-public class CommonRvFragment extends BaseFragment {
+public class RentHouseFragment extends BaseFragment {
 
 
-    public static CommonRvFragment newInstance() {
-        CommonRvFragment commonRvFragment = new CommonRvFragment();
-        return commonRvFragment;
+
+    public static RentHouseFragment newInstance() {
+        RentHouseFragment rentHouseFragment = new RentHouseFragment();
+        return rentHouseFragment;
     }
 
 
     @Override
     public int getViewLayout() {
-        return R.layout.fragment_common_recyclerview;
+        return R.layout.fragment_rent_house;
     }
 
     @Override

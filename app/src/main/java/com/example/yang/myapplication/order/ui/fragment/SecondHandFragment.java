@@ -1,4 +1,4 @@
-package com.example.yang.myapplication.client.ui.fragment;
+package com.example.yang.myapplication.order.ui.fragment;
 
 import android.os.Bundle;
 import android.support.design.widget.TabLayout;
