@@ -50,10 +50,10 @@ public class LoginActivity extends MvpActivity<MvpBasePresenter> {
 
     @Override
     protected void initView(Bundle savedInstanceState, ToolbarHolder tbHolder, Intent intent) {
-        inti();
+        init();
     }
 
-    private void inti() {
+    private void init() {
         etLoginPhone.setText("13826914162");
         etLoginPsw.setText("888888");
     }

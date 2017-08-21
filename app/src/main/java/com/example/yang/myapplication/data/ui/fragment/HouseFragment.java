@@ -1,4 +1,4 @@
-package com.example.yang.myapplication.house.ui.fragment;
+package com.example.yang.myapplication.data.ui.fragment;
 
 import android.os.Bundle;
 

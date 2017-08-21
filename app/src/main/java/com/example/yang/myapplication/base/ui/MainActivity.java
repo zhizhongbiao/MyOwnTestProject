@@ -10,7 +10,7 @@ import com.example.yang.myapplication.R;
 import com.example.yang.myapplication.base.adpter.TabBarAdapter;
 import com.example.yang.myapplication.base.mvp.view.BaseActivity;
 import com.example.yang.myapplication.order.ui.fragment.ClientFragment;
-import com.example.yang.myapplication.house.ui.fragment.HouseFragment;
+import com.example.yang.myapplication.data.ui.fragment.HouseFragment;
 import com.example.yang.myapplication.my.ui.fragment.MyFragment;
 import com.example.yang.myapplication.project.ui.fragment.ProjectFragment;
 import com.jpeng.jptabbar.JPTabBar;

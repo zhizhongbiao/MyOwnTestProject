@@ -137,6 +137,8 @@ public abstract class BaseActivity extends SupportActivity {
         public TextView tvCenterTitle;
         @BindView(R.id.tvRightTitle)
         public TextView tvRightTitle;
+        @BindView(R.id.tvLeftTitle)
+        public TextView tvLeftTitle;
         @BindView(R.id.ivRight)
         public ImageView ivRight;
         @BindView(R.id.rlToobar)

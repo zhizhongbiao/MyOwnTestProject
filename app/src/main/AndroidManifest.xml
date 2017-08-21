@@ -61,7 +61,7 @@
         <!--佣金结算 -->
         <activity android:name=".CommissionBalanceActivity" />
         <!--客源 -->
-        <activity android:name=".project.ui.activity.ClientSourceActivity" />
+        <activity android:name=".project.ui.activity.ProjectDetail" />
         <!--搜索客人Activity-->
         <activity
             android:name=".project.ui.activity.ClientSearchActivity"

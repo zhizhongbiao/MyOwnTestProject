@@ -15,7 +15,7 @@ import com.example.yang.myapplication.base.mvp.presenter.MvpBasePresenter;
 import com.example.yang.myapplication.base.mvp.view.MvpFragment;
 import com.example.yang.myapplication.order.bean.ProjectListBean;
 import com.example.yang.myapplication.project.ui.activity.ClientSearchActivity;
-import com.example.yang.myapplication.project.ui.activity.ClientSourceActivity;
+import com.example.yang.myapplication.project.ui.activity.ProjectDetail;
 import com.example.yang.myapplication.project.adapter.EstateAdapter;
 
 import java.io.Serializable;
@@ -97,7 +97,7 @@ public class ProjectFragment extends MvpFragment<MvpBasePresenter> {
         adapter.setOnItemClickListener(new BaseQuickAdapter.OnItemClickListener() {
             @Override
             public void onItemClick(BaseQuickAdapter adapter, View view, int position) {
-                startActivity(ClientSourceActivity.getIntent(getActivity(), "暂时无参数"));
+                startActivity(ProjectDetail.getIntent(getActivity(), "暂时无参数"));
             }
         });
     }

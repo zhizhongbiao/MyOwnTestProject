@@ -21,6 +21,19 @@
             android:layout_marginLeft="30px"
             android:src="@mipmap/back_up" />
 
+        <TextView
+            android:id="@+id/tvLeftTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30px"
+            android:text="左标题"
+            android:visibility="gone"
+            android:textColor="#fff"
+            android:textSize="34px"
+             />
+
 
         <TextView
             android:id="@+id/tvCenterTitle"

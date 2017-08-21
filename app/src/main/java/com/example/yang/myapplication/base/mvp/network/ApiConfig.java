@@ -7,7 +7,10 @@ public class ApiConfig {
 
     //登录
     public static final String API_LOGIN = "api/userLoginKFS";
+
+    //项目列表
     public static final String API_PROJECT_LIST = "api/developer";
-
-
+    //项目细节列表
+    public static final String API_PROJECT_DETAIL_LIST = "api/developer";
 }
+
