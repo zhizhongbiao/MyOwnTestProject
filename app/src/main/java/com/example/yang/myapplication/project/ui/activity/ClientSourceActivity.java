@@ -1,4 +1,4 @@
-package com.example.yang.myapplication.order.ui.activity;
+package com.example.yang.myapplication.project.ui.activity;
 
 
 import android.content.Context;
@@ -7,6 +7,13 @@ import android.os.Bundle;
 
 import com.example.yang.myapplication.R;
 import com.example.yang.myapplication.base.mvp.view.BaseActivity;
+
+
+/**
+ * Author : WaterFlower.
+ * Created on 2017/8/11.
+ * Desc : 客源
+ */
 
 public class ClientSourceActivity extends BaseActivity {
 
@@ -20,6 +27,8 @@ public class ClientSourceActivity extends BaseActivity {
     public int getViewLayout() {
         return R.layout.activity_client_source;
     }
+
+
 
     @Override
     protected void initView(Bundle savedInstanceState, ToolbarHolder tbHolder, Intent intent) {

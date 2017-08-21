@@ -9,7 +9,6 @@ import android.util.AttributeSet;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.ImageView;
-import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.example.yang.myapplication.R;
@@ -31,18 +30,20 @@ import me.yokeyword.fragmentation.SupportActivity;
 public abstract class BaseActivity extends SupportActivity {
 
 
-    private static final int DEFAULT_TOOLBAR = 1;
-    private static final int NO_TOOLBAR = 0;
+    protected static final int DEFAULT_TOOLBAR = 0;
+    protected static final int NO_TOOLBAR = -1;
 
     private static final String LAYOUT_LINEARLAYOUT = "LinearLayout";
     private static final String LAYOUT_FRAMELAYOUT = "FrameLayout";
     private static final String LAYOUT_RELATIVELAYOUT = "RelativeLayout";
     private static final String LAYOUT_RADIOGROUP = "RadioGroup";
+    private static final String LAYOUT_CARDVIEW = "CardView";
 
     private Unbinder mUnbinder;
     private View contentView;
-    private LinearLayout containerView;
+
     private ToolbarHolder toolbarHolder;
+    private AutoFrameLayout containerView;
 
 
     /**
@@ -56,10 +57,9 @@ public abstract class BaseActivity extends SupportActivity {
      *
      * @return
      */
-    protected int getTitleViewLayout() {
+    protected int getToolBarLayout() {
         return NO_TOOLBAR;
     }
-
 
 
     @Override
@@ -72,9 +72,11 @@ public abstract class BaseActivity extends SupportActivity {
 //            getWindow().addFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_NAVIGATION);
         }
         getWindow().setBackgroundDrawable(null);
-        containerView = (LinearLayout) LayoutInflater.from(this).inflate(R.layout.activity_base, null, false);
-        AutoRelativeLayout toolBar = (AutoRelativeLayout) containerView.findViewById(R.id.rlToobar);
-        if (getTitleViewLayout() == NO_TOOLBAR) {
+        setContentView(R.layout.activity_base);
+        containerView = (AutoFrameLayout) findViewById(R.id.flContainer);
+        AutoRelativeLayout toolBar = (AutoRelativeLayout) findViewById(R.id.rlToobar);
+
+        if (getToolBarLayout() == NO_TOOLBAR) {
             toolBar.setVisibility(View.GONE);
         } else {
             toolBar.setVisibility(View.VISIBLE);
@@ -84,8 +86,7 @@ public abstract class BaseActivity extends SupportActivity {
         contentView = LayoutInflater.from(this).inflate(getViewLayout(), null, false);
         mUnbinder = ButterKnife.bind(this, contentView);
         addContentView(contentView);
-        setContentView(containerView);
-        initView(savedInstanceState,toolbarHolder, getIntent());
+        initView(savedInstanceState, toolbarHolder, getIntent());
     }
 
 
@@ -95,7 +96,7 @@ public abstract class BaseActivity extends SupportActivity {
      * @param savedInstanceState
      * @param intent
      */
-    protected abstract void initView(Bundle savedInstanceState,ToolbarHolder tbHolder, Intent intent);
+    protected abstract void initView(Bundle savedInstanceState, ToolbarHolder tbHolder, Intent intent);
 
     @Override
     public View onCreateView(String name, Context context, AttributeSet attrs) {
@@ -108,6 +109,8 @@ public abstract class BaseActivity extends SupportActivity {
             view = new AutoRelativeLayout(context, attrs);
         } else if (name.equals(LAYOUT_RADIOGROUP)) {
 //            view = new AutoRadioGroup(context, attrs);
+        } else if (name.equals(LAYOUT_CARDVIEW)) {
+//            view = new AutoCardView(context, attrs);
         }
 
         if (view != null) {
@@ -117,7 +120,7 @@ public abstract class BaseActivity extends SupportActivity {
     }
 
     protected void addContentView(View view) {
-        containerView.addView(view);
+        containerView.addView(view, AutoFrameLayout.LayoutParams.MATCH_PARENT, AutoFrameLayout.LayoutParams.MATCH_PARENT);
     }
 
     @Override
@@ -127,7 +130,7 @@ public abstract class BaseActivity extends SupportActivity {
     }
 
 
-   public class ToolbarHolder implements View.OnClickListener {
+    public class ToolbarHolder implements View.OnClickListener {
         @BindView(R.id.ivBack)
         public ImageView ivBack;
         @BindView(R.id.tvCenterTitle)

@@ -16,6 +16,7 @@ public class BindPhoneActivity extends BaseActivity {
         return R.layout.activity_bind_phone;
     }
 
+
     @Override
     protected void initView(Bundle savedInstanceState, ToolbarHolder tbHolder, Intent intent) {
 

@@ -18,8 +18,6 @@ import org.greenrobot.eventbus.Subscribe;
 
 import java.lang.reflect.ParameterizedType;
 
-import butterknife.Unbinder;
-
 
 /**
  * Author : WaterFlower.
@@ -33,7 +31,6 @@ public abstract class MvpFragment<P extends MvpBasePresenter>  extends BaseFragm
     protected MaterialDialog progressDialog;
     private boolean loadSuccess;
     private boolean loadFinish; //请求是否成功
-    private Unbinder unbinder;
     private Bundle savedInstanceState;
 
     @Override

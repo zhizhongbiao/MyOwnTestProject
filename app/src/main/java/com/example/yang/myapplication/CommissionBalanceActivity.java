@@ -13,6 +13,8 @@ public class CommissionBalanceActivity extends BaseActivity {
         return R.layout.activity_commission_balance;
     }
 
+
+
     @Override
     protected void initView(Bundle savedInstanceState, ToolbarHolder tbHolder, Intent intent) {
 

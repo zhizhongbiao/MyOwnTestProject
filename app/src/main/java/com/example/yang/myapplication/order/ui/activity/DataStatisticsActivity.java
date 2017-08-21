@@ -15,6 +15,8 @@ public class DataStatisticsActivity extends BaseActivity {
         return R.layout.activity_data_statistics;
     }
 
+
+
     @Override
     protected void initView(Bundle savedInstanceState, ToolbarHolder tbHolder, Intent intent) {
 

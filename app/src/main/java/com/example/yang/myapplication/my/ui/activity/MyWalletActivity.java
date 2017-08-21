@@ -16,6 +16,8 @@ public class MyWalletActivity extends BaseActivity {
         return R.layout.activity_my_wallet;
     }
 
+
+
     @Override
     protected void initView(Bundle savedInstanceState, ToolbarHolder tbHolder, Intent intent) {
 

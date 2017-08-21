@@ -92,6 +92,7 @@ public final class CaptureActivity extends BaseActivity implements SurfaceHolder
         return R.layout.activity_capture;
     }
 
+
     @Override
     protected void initView(Bundle savedInstanceState, ToolbarHolder tbHolder, Intent intent) {
         tbHolder.tvCenterTitle.setText("扫描二维码");

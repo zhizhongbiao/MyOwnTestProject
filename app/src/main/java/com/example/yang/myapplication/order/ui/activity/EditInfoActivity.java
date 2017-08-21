@@ -15,6 +15,8 @@ public class EditInfoActivity extends BaseActivity {
         return R.layout.activity_edit_info;
     }
 
+
+
     @Override
     protected void initView(Bundle savedInstanceState, ToolbarHolder tbHolder, Intent intent) {
 

@@ -16,6 +16,7 @@ public class MyInfoActivity extends BaseActivity {
         return R.layout.activity_my_info;
     }
 
+
     @Override
     protected void initView(Bundle savedInstanceState, ToolbarHolder tbHolder, Intent intent) {
 

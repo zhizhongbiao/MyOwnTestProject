@@ -2,28 +2,33 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/bgColor"
     android:orientation="vertical">
 
     <com.zhy.autolayout.AutoRelativeLayout
         android:id="@+id/rlToobar"
         android:layout_width="match_parent"
         android:layout_height="96px"
-        android:background="#fd7801">
+        android:background="@color/appColor">
 
 
         <ImageView
             android:id="@+id/ivBack"
-            android:layout_width="34px"
-            android:layout_height="34px"
+            android:layout_width="94px"
+            android:layout_height="match_parent"
             android:layout_centerVertical="true"
-            android:layout_marginLeft="30px"
+            android:paddingBottom="28px"
+            android:paddingLeft="30px"
+            android:paddingRight="30px"
+            android:paddingTop="28px"
+
             android:src="@mipmap/back_up" />
 
         <com.zhy.autolayout.AutoLinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_marginBottom="14px"
-            android:layout_marginLeft="30px"
+
             android:layout_marginRight="24px"
             android:layout_marginTop="14px"
             android:layout_toLeftOf="@+id/tvEnsure"
@@ -36,11 +41,12 @@
                 android:id="@+id/etSearch"
                 android:layout_width="0px"
                 android:layout_height="match_parent"
+                android:layout_marginLeft="8px"
                 android:layout_weight="1"
                 android:background="#FFF"
                 android:gravity="center_vertical"
                 android:hint="请输入客户手机号码"
-                android:paddingLeft="18px"
+                android:paddingLeft="10px"
                 android:textColor="#000"
                 android:textColorHint="#cccccc"
                 android:textSize="30px" />
@@ -69,5 +75,11 @@
 
 
     </com.zhy.autolayout.AutoRelativeLayout>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rvClient"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
 
 </LinearLayout>

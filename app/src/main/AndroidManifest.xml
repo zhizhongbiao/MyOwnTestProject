@@ -60,6 +60,15 @@
         <activity android:name=".CommissionDetailActivity" />
         <!--佣金结算 -->
         <activity android:name=".CommissionBalanceActivity" />
+        <!--客源 -->
+        <activity android:name=".project.ui.activity.ClientSourceActivity" />
+        <!--搜索客人Activity-->
+        <activity
+            android:name=".project.ui.activity.ClientSearchActivity"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden">
+            >
+
+        </activity>
 
 
         <!--AutoLayout标明设计图尺寸-->

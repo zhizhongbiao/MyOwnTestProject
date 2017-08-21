@@ -65,6 +65,7 @@ public class MainActivity extends BaseActivity {
         return R.layout.activity_main;
     }
 
+
     @Override
     protected void initView(Bundle savedInstanceState, BaseActivity.ToolbarHolder tbHolder, Intent intent) {
         initTab();

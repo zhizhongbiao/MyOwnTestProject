@@ -22,6 +22,8 @@ public class ForgetPswActivity extends MvpActivity<MvpBasePresenter> {
         return R.layout.activity_forget_psw;
     }
 
+
+
     @Override
     protected void initView(Bundle savedInstanceState, ToolbarHolder tbHolder, Intent intent) {
 

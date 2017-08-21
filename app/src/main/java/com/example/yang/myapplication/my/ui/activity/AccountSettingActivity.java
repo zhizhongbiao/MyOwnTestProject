@@ -16,6 +16,8 @@ public class AccountSettingActivity extends BaseActivity {
         return R.layout.activity_account_setting;
     }
 
+
+
     @Override
     protected void initView(Bundle savedInstanceState, ToolbarHolder tbHolder, Intent intent) {
 

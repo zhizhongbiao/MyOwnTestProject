@@ -24,33 +24,35 @@
 
 
         <ImageView
-            android:id="@+id/ivAdd"
-            android:layout_width="36px"
-            android:layout_height="36px"
-            android:layout_alignParentRight="true"
-            android:layout_centerVertical="true"
-            android:layout_marginLeft="20px"
-            android:layout_marginRight="30px"
-            android:src="@drawable/add_36" />
-
-        <ImageView
             android:id="@+id/ivSearch"
-            android:layout_width="36px"
-            android:layout_height="36px"
+            android:layout_width="66px"
+            android:layout_height="66px"
             android:layout_centerVertical="true"
             android:layout_toLeftOf="@+id/ivAdd"
+            android:padding="15px"
             android:src="@drawable/search_36" />
+
+
+        <ImageView
+            android:id="@+id/ivAdd"
+            android:layout_width="66px"
+            android:layout_height="66px"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15px"
+            android:padding="15px"
+            android:src="@drawable/add_36" />
 
 
     </com.zhy.autolayout.AutoRelativeLayout>
 
 
     <android.support.v7.widget.RecyclerView
-        android:layout_marginTop="16px"
-        android:background="#FFFFFF"
         android:id="@+id/rvEstate"
         android:layout_width="match_parent"
         android:layout_height="0px"
-        android:layout_weight="1" />
+        android:layout_marginTop="16px"
+        android:layout_weight="1"
+        android:background="#FFFFFF" />
 
 </LinearLayout>

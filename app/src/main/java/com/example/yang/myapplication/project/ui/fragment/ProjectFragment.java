@@ -14,7 +14,8 @@ import com.example.yang.myapplication.base.mvp.network.ApiConfig;
 import com.example.yang.myapplication.base.mvp.presenter.MvpBasePresenter;
 import com.example.yang.myapplication.base.mvp.view.MvpFragment;
 import com.example.yang.myapplication.order.bean.ProjectListBean;
-import com.example.yang.myapplication.order.ui.activity.ClientSourceActivity;
+import com.example.yang.myapplication.project.ui.activity.ClientSearchActivity;
+import com.example.yang.myapplication.project.ui.activity.ClientSourceActivity;
 import com.example.yang.myapplication.project.adapter.EstateAdapter;
 
 import java.io.Serializable;
@@ -79,11 +80,15 @@ public class ProjectFragment extends MvpFragment<MvpBasePresenter> {
             case R.id.ivAdd:
                 break;
             case R.id.ivSearch:
+                startActivity(ClientSearchActivity.getIntent(getActivity(), "暂时无参数"));
                 break;
         }
     }
 
 
+    /**
+     * 初始化Rv
+     */
     private void initRv() {
         rvEstate.setLayoutManager(new LinearLayoutManager(getActivity()));
         adapter = new EstateAdapter(getActivity());

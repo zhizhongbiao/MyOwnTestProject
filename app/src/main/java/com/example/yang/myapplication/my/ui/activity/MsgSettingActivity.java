@@ -16,6 +16,7 @@ public class MsgSettingActivity extends BaseActivity {
         return R.layout.activity_msg_setting;
     }
 
+
     @Override
     protected void initView(Bundle savedInstanceState, ToolbarHolder tbHolder, Intent intent) {
 

@@ -47,6 +47,7 @@ public class LoginActivity extends MvpActivity<MvpBasePresenter> {
         return R.layout.activity_login;
     }
 
+
     @Override
     protected void initView(Bundle savedInstanceState, ToolbarHolder tbHolder, Intent intent) {
         inti();

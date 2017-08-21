@@ -19,6 +19,8 @@ public class SearchActivity extends BaseActivity {
         return R.layout.activity_search;
     }
 
+
+
     @Override
     protected void initView(Bundle savedInstanceState, ToolbarHolder tbHolder, Intent intent) {
 

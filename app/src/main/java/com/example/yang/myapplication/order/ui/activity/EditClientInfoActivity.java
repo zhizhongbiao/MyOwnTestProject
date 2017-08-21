@@ -15,6 +15,8 @@ public class EditClientInfoActivity extends BaseActivity {
         return R.layout.activity_edit_client_info;
     }
 
+
+
     @Override
     protected void initView(Bundle savedInstanceState, ToolbarHolder tbHolder, Intent intent) {
 

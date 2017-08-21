@@ -16,6 +16,8 @@ public class AboutActivity extends BaseActivity {
         return R.layout.activity_about;
     }
 
+
+
     @Override
     protected void initView(Bundle savedInstanceState, ToolbarHolder tbHolder, Intent intent) {
 

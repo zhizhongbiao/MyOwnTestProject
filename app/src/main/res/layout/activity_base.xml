@@ -9,14 +9,14 @@
     <com.zhy.autolayout.AutoRelativeLayout
         android:id="@+id/rlToobar"
         android:layout_width="match_parent"
-        android:layout_height="110px"
-        android:background="#fd7801">
+        android:layout_height="96px"
+        android:background="@color/appColor">
 
 
         <ImageView
             android:id="@+id/ivBack"
             android:layout_width="34px"
-            android:layout_height="34px"
+            android:layout_height="40px"
             android:layout_centerVertical="true"
             android:layout_marginLeft="30px"
             android:src="@mipmap/back_up" />
@@ -29,7 +29,7 @@
             android:layout_centerInParent="true"
             android:text="中标题"
             android:textColor="#fff"
-            android:textSize="38px" />
+            android:textSize="34px" />
 
 
         <TextView
@@ -41,7 +41,7 @@
             android:layout_marginRight="30px"
             android:text="右标题"
             android:textColor="#fff"
-            android:textSize="38px"
+            android:textSize="34px"
             android:visibility="gone" />
 
 
@@ -56,6 +56,13 @@
             android:visibility="gone" />
 
     </com.zhy.autolayout.AutoRelativeLayout>
+
+
+    <com.zhy.autolayout.AutoFrameLayout
+        android:id="@+id/flContainer"
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="1" />
 
 
 </LinearLayout>
