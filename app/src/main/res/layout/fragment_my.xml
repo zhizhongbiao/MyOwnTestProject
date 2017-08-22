@@ -3,14 +3,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/bgColor"
-
     android:orientation="vertical">
 
 
     <com.zhy.autolayout.AutoRelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="110px"
-        android:background="#fd7801">
+        android:layout_height="96px"
+        android:background="@color/appColor">
 
         <TextView
             android:layout_width="wrap_content"
@@ -23,27 +22,25 @@
 
         <ImageView
             android:id="@+id/ivNotification"
-            android:layout_width="40px"
-            android:layout_height="40px"
+            android:layout_width="98px"
+            android:layout_height="match_parent"
             android:layout_alignParentRight="true"
             android:layout_centerVertical="true"
-            android:layout_marginRight="29px"
+            android:padding="29px"
             android:src="@mipmap/ic_launcher_round" />
 
         <View
+            android:id="@+id/vNotify"
             android:layout_width="10px"
             android:layout_height="10px"
             android:layout_alignRight="@+id/ivNotification"
             android:layout_alignTop="@+id/ivNotification"
+            android:layout_marginRight="29px"
+            android:layout_marginTop="29px"
             android:background="@drawable/shape_notify_bg" />
 
 
     </com.zhy.autolayout.AutoRelativeLayout>
-
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="16px"
-        android:background="#f5f2f0" />
 
     <com.zhy.autolayout.AutoFrameLayout
         android:layout_width="match_parent"
@@ -73,70 +70,81 @@
 
     <View
         android:layout_width="match_parent"
-        android:layout_height="21px"
-        android:background="@color/bgColor" />
-
-    <com.zhy.autolayout.AutoLinearLayout
-        android:id="@+id/llMyProject"
-        android:layout_width="match_parent"
-        android:layout_height="100px"
-        android:background="#FFF"
-        android:gravity="center_vertical"
-        android:orientation="horizontal">
+        android:layout_height="5px" />
 
 
-        <ImageView
-            android:layout_width="44px"
-            android:layout_height="44px"
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:id="@+id/llMyProject"
+            android:layout_width="match_parent"
+            android:layout_height="100px"
+            android:background="#FFF"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+
+            <ImageView
+                android:layout_width="44px"
+                android:layout_height="44px"
+                android:layout_marginLeft="26px"
+                android:src="@drawable/my_project_44" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="24px"
+                android:text="我的项目"
+                android:textColor="#333333"
+                android:textSize="30px" />
+
+
+        </com.zhy.autolayout.AutoLinearLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_below="@+id/llMyProject"
             android:layout_marginLeft="26px"
-            android:src="@drawable/my_project_44" />
+            android:layout_marginRight="26px"
+            android:background="#a7a3a3" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="24px"
-            android:text="我的项目"
-            android:textColor="#333333"
-            android:textSize="30px" />
-
-
-    </com.zhy.autolayout.AutoLinearLayout>
-
-
+        <com.zhy.autolayout.AutoLinearLayout
+            android:id="@+id/llMyClient"
+            android:layout_width="match_parent"
+            android:layout_height="100px"
+            android:layout_below="@+id/llMyProject"
+            android:layout_marginTop="1px"
+            android:background="#FFF"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
 
 
-    <com.zhy.autolayout.AutoLinearLayout
-        android:id="@+id/llMyClient"
-        android:background="#FFF"
-        android:layout_marginTop="1px"
-        android:layout_width="match_parent"
-        android:layout_height="100px"
-        android:gravity="center_vertical"
-        android:orientation="horizontal">
+            <ImageView
+                android:layout_width="44px"
+                android:layout_height="44px"
+                android:layout_marginLeft="26px"
+                android:src="@drawable/my_client_44" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="24px"
+                android:text="我的客户"
+                android:textColor="#333333"
+                android:textSize="30px" />
 
 
-        <ImageView
-            android:layout_width="44px"
-            android:layout_height="44px"
-            android:layout_marginLeft="26px"
-            android:src="@drawable/my_client_44" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="24px"
-            android:text="我的客人"
-            android:textColor="#333333"
-            android:textSize="30px" />
+        </com.zhy.autolayout.AutoLinearLayout>
 
 
-    </com.zhy.autolayout.AutoLinearLayout>
+
 
 
     <View
         android:layout_width="match_parent"
-        android:layout_height="30px"
-        />
+        android:layout_height="30px" />
 
     <com.zhy.autolayout.AutoLinearLayout
         android:id="@+id/llSetting"
@@ -163,7 +171,6 @@
 
 
     </com.zhy.autolayout.AutoLinearLayout>
-
 
 
 </LinearLayout>

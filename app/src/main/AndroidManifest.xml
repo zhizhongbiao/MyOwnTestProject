@@ -7,7 +7,7 @@
     <application
         android:name=".base.MyApplication"
         android:allowBackup="true"
-        android:icon="@mipmap/logo_person"
+        android:icon="@mipmap/logo_180"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/logo_person"
         android:supportsRtl="true"
@@ -67,7 +67,9 @@
             android:name=".project.ui.activity.ClientSearchActivity"
             android:windowSoftInputMode="adjustUnspecified|stateHidden"/>
         <!--全部客源 -->
-        <activity android:name=".project.ui.activity.AllProjectDetailActivity" />
+        <activity android:name=".project.ui.activity.AllClientTypeActivity" />
+        <!--消息通知 -->
+        <activity android:name=".my.ui.activity.MsgInfoActivity" />
 
 
 

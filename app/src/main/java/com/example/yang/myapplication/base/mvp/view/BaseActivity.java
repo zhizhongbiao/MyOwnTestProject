@@ -94,9 +94,9 @@ public abstract class BaseActivity extends SupportActivity {
      * 从intent获取数据，初始化View。或者其他view级第三方控件的初始化,及相关点击事件的绑定
      *
      * @param savedInstanceState
-     * @param intent
+     * @param args
      */
-    protected abstract void initView(Bundle savedInstanceState, ToolbarHolder tbHolder, Intent intent);
+    protected abstract void initView(Bundle savedInstanceState, ToolbarHolder tbHolder, Intent args);
 
     @Override
     public View onCreateView(String name, Context context, AttributeSet attrs) {

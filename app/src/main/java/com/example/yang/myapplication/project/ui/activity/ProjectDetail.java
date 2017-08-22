@@ -12,7 +12,7 @@ import android.view.View;
 import com.example.yang.myapplication.R;
 import com.example.yang.myapplication.base.adpter.TabBarAdapter;
 import com.example.yang.myapplication.base.mvp.view.BaseActivity;
-import com.example.yang.myapplication.project.base.CommonRvFragment;
+import com.example.yang.myapplication.project.base.CommonClientTypeFragment;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -29,6 +29,7 @@ import butterknife.BindView;
 public class ProjectDetail extends BaseActivity {
 
     private static final String PROJECT_NAME_KEY = "projectNameKey";
+    private static final String PROJECT_ID_KEY = "projectIdKey";
     private static final String[] titles = {"报备", "带客", "下定", "签约", "结佣"};
 
     @BindView(R.id.tablayout)
@@ -37,10 +38,12 @@ public class ProjectDetail extends BaseActivity {
     ViewPager vpContainer;
     private List<Fragment> fragments = new ArrayList<>();
     private TabBarAdapter adapter;
+    private int projectId;
 
-    public static Intent getIntent(Context context, String projectName) {
+    public static Intent getIntent(Context context, String projectName,int projectId) {
         Intent intent = new Intent(context, ProjectDetail.class);
         intent.putExtra(PROJECT_NAME_KEY, projectName);
+        intent.putExtra(PROJECT_ID_KEY, projectId);
         return intent;
     }
 
@@ -57,8 +60,9 @@ public class ProjectDetail extends BaseActivity {
 
 
     @Override
-    protected void initView(Bundle savedInstanceState, ToolbarHolder tbHolder, Intent intent) {
-        initToolbar(tbHolder, intent.getStringExtra(PROJECT_NAME_KEY));
+    protected void initView(Bundle savedInstanceState, ToolbarHolder tbHolder, Intent args) {
+        initToolbar(tbHolder, args.getStringExtra(PROJECT_NAME_KEY));
+        projectId = args.getIntExtra(PROJECT_ID_KEY, -1);
         initTab();
     }
 
@@ -78,7 +82,7 @@ public class ProjectDetail extends BaseActivity {
         tbHolder.tvLeftTitle.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(AllProjectDetailActivity.getIntent(ProjectDetail.this, "暂无参数"));
+                startActivity(AllClientTypeActivity.getIntent(ProjectDetail.this, "暂无参数"));
             }
         });
     }
@@ -87,7 +91,7 @@ public class ProjectDetail extends BaseActivity {
     private void initTab() {
         fragments.clear();
         for (int i = 0; i < titles.length; i++) {
-            fragments.add(CommonRvFragment.newInstance(i));
+            fragments.add(CommonClientTypeFragment.newInstance(i,projectId));
         }
 
         adapter = new TabBarAdapter(getSupportFragmentManager(), fragments, titles);

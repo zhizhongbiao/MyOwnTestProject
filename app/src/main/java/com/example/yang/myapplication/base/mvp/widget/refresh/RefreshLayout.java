@@ -6,7 +6,7 @@ import android.util.AttributeSet;
 /**
  * Author : WaterFlower.
  * Created on 2017/8/15.
- * Desc :
+ * Desc :  添加isRefreshing方法
  */
 
 public class RefreshLayout extends SolveRefreshLayout{

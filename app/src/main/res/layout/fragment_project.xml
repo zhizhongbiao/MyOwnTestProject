@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/bgColor"
@@ -8,16 +9,15 @@
 
     <com.zhy.autolayout.AutoRelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="#ff850b">
+        android:layout_height="96px"
+        android:background="@color/appColor">
 
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
-            android:layout_marginBottom="30px"
-            android:layout_marginTop="30px"
+            android:layout_centerInParent="true"
             android:text="项目"
             android:textColor="#FFF"
             android:textSize="34px" />
@@ -47,12 +47,19 @@
     </com.zhy.autolayout.AutoRelativeLayout>
 
 
-    <android.support.v7.widget.RecyclerView
-        android:id="@+id/rvEstate"
+    <com.example.yang.myapplication.base.mvp.widget.refresh.RefreshLayout
+        android:id="@+id/refreshLayout"
         android:layout_width="match_parent"
         android:layout_height="0px"
-        android:layout_marginTop="16px"
         android:layout_weight="1"
-        android:background="#FFFFFF" />
+        app:pullMaxHeight="100dp"
+        app:pullViewHeight="80dp">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rvEstate"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </com.example.yang.myapplication.base.mvp.widget.refresh.RefreshLayout>
+
 
 </LinearLayout>

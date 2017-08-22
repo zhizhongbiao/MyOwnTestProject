@@ -49,7 +49,7 @@ public class LoginActivity extends MvpActivity<MvpBasePresenter> {
 
 
     @Override
-    protected void initView(Bundle savedInstanceState, ToolbarHolder tbHolder, Intent intent) {
+    protected void initView(Bundle savedInstanceState, ToolbarHolder tbHolder, Intent args) {
         init();
     }
 
@@ -79,7 +79,6 @@ public class LoginActivity extends MvpActivity<MvpBasePresenter> {
     public void onViewClicked(View view) {
         switch (view.getId()) {
             case R.id.btnLogin:
-
                 String loginPhone = etLoginPhone.getText().toString().trim();
                 String loginPsw = etLoginPsw.getText().toString().trim();
                 if (TextUtils.isEmpty(loginPhone) || TextUtils.isEmpty(loginPsw)) {
@@ -89,6 +88,7 @@ public class LoginActivity extends MvpActivity<MvpBasePresenter> {
                 login(loginPhone, loginPsw);
                 break;
             case R.id.tvForgetPsw:
+                startActivity(ForgetPswActivity.getIntent(this));
                 break;
         }
     }

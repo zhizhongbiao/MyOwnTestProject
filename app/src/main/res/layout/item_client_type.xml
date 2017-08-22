@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFF"
+    android:orientation="vertical">
+
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:id="@+id/llClient"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="39px"
+            android:layout_marginTop="22px"
+            android:text="客户 : "
+            android:textColor="#666666"
+            android:textSize="30px" />
+
+
+        <TextView
+            android:id="@+id/tvClienName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="28px"
+            android:layout_marginTop="22px"
+            android:text="李白"
+            android:textColor="#333333"
+            android:textSize="28px" />
+
+        <TextView
+            android:id="@+id/tvClienPhone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="28px"
+            android:layout_marginTop="22px"
+            android:text="(15956565656)"
+            android:textColor="#666666"
+            android:textSize="28px" />
+
+
+        <TextView
+            android:id="@+id/tvStateType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20px"
+            android:layout_marginTop="19px"
+            android:background="@drawable/shape_state_type_bg"
+            android:paddingBottom="4px"
+            android:paddingLeft="6px"
+            android:paddingRight="6px"
+            android:paddingTop="4px"
+            android:text="报备"
+            android:textColor="#76c400"
+            android:textSize="22px" />
+
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginTop="25px"
+        android:background="#e0dad5"
+        android:visibility="gone" />
+
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:id="@+id/llIntentProject"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="39px"
+                    android:layout_marginTop="22px"
+                    android:text="意向项目:"
+                    android:textColor="#666666"
+                    android:textSize="26px" />
+
+                <TextView
+                    android:id="@+id/tvIntentProject"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="28px"
+                    android:layout_marginTop="22px"
+                    android:text="15956565656"
+                    android:textColor="#333333"
+                    android:textSize="26px" />
+
+
+            </com.zhy.autolayout.AutoLinearLayout>
+
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:id="@+id/llSignTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="39px"
+                    android:layout_marginTop="22px"
+                    android:text="签约时间:"
+                    android:textColor="#666666"
+                    android:textSize="26px" />
+
+                <TextView
+                    android:id="@+id/tvSignTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="28px"
+                    android:layout_marginTop="22px"
+                    android:text="2017-02-02 16:00"
+                    android:textColor="#333333"
+                    android:textSize="26px" />
+
+
+            </com.zhy.autolayout.AutoLinearLayout>
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:id="@+id/llReportTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="39px"
+                    android:layout_marginTop="22px"
+                    android:text="报备时间:"
+                    android:textColor="#666666"
+                    android:textSize="26px" />
+
+                <TextView
+                    android:id="@+id/tvReportTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="28px"
+                    android:layout_marginTop="22px"
+                    android:text="2017-02-02 16:00"
+                    android:textColor="#333333"
+                    android:textSize="26px" />
+
+
+            </com.zhy.autolayout.AutoLinearLayout>
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:id="@+id/llVisitTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="39px"
+                    android:layout_marginTop="22px"
+                    android:text="到访时间:"
+                    android:textColor="#666666"
+                    android:textSize="26px" />
+
+                <TextView
+                    android:id="@+id/tvVisitTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="28px"
+                    android:layout_marginTop="22px"
+                    android:text="2017-25-01"
+                    android:textColor="#333333"
+                    android:textSize="26px" />
+
+
+            </com.zhy.autolayout.AutoLinearLayout>
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:id="@+id/llMoney"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="39px"
+                    android:layout_marginTop="22px"
+                    android:text="下定金额:"
+                    android:textColor="#666666"
+                    android:textSize="26px" />
+
+                <TextView
+                    android:id="@+id/tvDeposit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="28px"
+                    android:layout_marginTop="22px"
+                    android:text="20000"
+                    android:textColor="#333333"
+                    android:textSize="26px" />
+
+
+            </com.zhy.autolayout.AutoLinearLayout>
+
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:id="@+id/llCommission"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="39px"
+                    android:layout_marginTop="22px"
+                    android:text="结佣金额:"
+                    android:textColor="#666666"
+                    android:textSize="26px" />
+
+                <TextView
+                    android:id="@+id/tvCommission"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="28px"
+                    android:layout_marginTop="22px"
+                    android:text="5222"
+                    android:textColor="#333333"
+                    android:textSize="26px" />
+
+
+            </com.zhy.autolayout.AutoLinearLayout>
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:id="@+id/llClientDelegate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="39px"
+                    android:layout_marginTop="22px"
+                    android:text="客源代理:"
+                    android:textColor="#666666"
+                    android:textSize="26px" />
+
+                <TextView
+                    android:id="@+id/tvClientDelegate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="28px"
+                    android:layout_marginTop="22px"
+                    android:text="李白(159556565656)"
+                    android:textColor="#333333"
+                    android:textSize="26px" />
+
+
+            </com.zhy.autolayout.AutoLinearLayout>
+        </com.zhy.autolayout.AutoLinearLayout>
+
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+
+            <TextView
+                android:id="@+id/tvReportState1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="30px"
+                android:layout_marginTop="66px"
+                android:background="@drawable/shape_report_invalid_state_bg"
+                android:paddingBottom="16px"
+                android:paddingLeft="20px"
+                android:paddingRight="20px"
+                android:paddingTop="16px"
+                android:text="报备无效"
+                android:textColor="#FFF"
+                android:textSize="24px" />
+
+
+            <TextView
+                android:id="@+id/tvReportState2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:layout_marginRight="30px"
+                android:background="@drawable/shape_report_valid_state_bg"
+                android:paddingBottom="16px"
+                android:paddingLeft="20px"
+                android:paddingRight="20px"
+                android:paddingTop="16px"
+                android:text="报备有效"
+                android:textColor="#FFF"
+                android:textSize="24px" />
+
+
+            <TextView
+                android:id="@+id/tvReportState3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="66px"
+                android:layout_marginRight="30px"
+                android:background="@drawable/shape_report_valid_state_bg"
+                android:paddingBottom="16px"
+                android:paddingLeft="20px"
+                android:paddingRight="20px"
+                android:paddingTop="16px"
+                android:text="报备有效"
+                android:textColor="#FFF"
+                android:textSize="24px" />
+
+
+        </com.zhy.autolayout.AutoRelativeLayout>
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+
+</LinearLayout>

@@ -20,4 +20,9 @@ public class MyApplication extends MainApplication {
         isLogin = login;
     }
 
+
+
+
+
+
 }

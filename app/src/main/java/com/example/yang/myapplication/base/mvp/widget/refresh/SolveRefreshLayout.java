@@ -5,7 +5,6 @@ import android.util.AttributeSet;
 import android.view.MotionEvent;
 
 
-
 public class SolveRefreshLayout extends NestedRefreshLayout {
     private float mPrevY;
 

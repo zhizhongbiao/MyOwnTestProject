@@ -48,7 +48,6 @@ public abstract class BaseFragment extends SupportFragment {
      */
     protected abstract void initView(Bundle savedInstanceState,Bundle args);
 
-
     @Override
     public void onDestroyView() {
         mUnbinder.unbind();

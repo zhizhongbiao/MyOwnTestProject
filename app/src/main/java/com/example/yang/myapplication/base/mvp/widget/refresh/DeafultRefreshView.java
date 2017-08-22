@@ -17,9 +17,6 @@ import com.example.yang.myapplication.R;
 import com.jpeng.jptabbar.DensityUtils;
 
 
-
-
-
 public class DeafultRefreshView extends LinearLayout implements IPullRefreshView {
 
     private static final int ANIMATION_DURATION = 150;

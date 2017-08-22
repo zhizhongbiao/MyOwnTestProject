@@ -14,7 +14,7 @@ import com.zhy.autolayout.utils.AutoUtils;
 /**
  * Author : WaterFlower.
  * Created on 2017/8/15.
- * Desc :
+ * Desc : 项目适配器
  */
 
 public class EstateAdapter extends BaseQuickAdapter<ProjectListBean.DataBean, BaseViewHolder> {
@@ -28,7 +28,7 @@ public class EstateAdapter extends BaseQuickAdapter<ProjectListBean.DataBean, Ba
     @Override
     protected void convert(BaseViewHolder helper, ProjectListBean.DataBean item) {
         helper.setText(R.id.etEstateName, item.project_name)
-                .setText(R.id.tvEstateLocate, item.region_name)
+                .setText(R.id.tvEstateLocate, "("+item.region_name+")")
                 .setText(R.id.tvEstatePrice, item.project_price);
         ImageManager.load(
                 context

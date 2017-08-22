@@ -94,7 +94,7 @@ public final class CaptureActivity extends BaseActivity implements SurfaceHolder
 
 
     @Override
-    protected void initView(Bundle savedInstanceState, ToolbarHolder tbHolder, Intent intent) {
+    protected void initView(Bundle savedInstanceState, ToolbarHolder tbHolder, Intent args) {
         tbHolder.tvCenterTitle.setText("扫描二维码");
         toolbar.setBackgroundColor(UIUtils.getColor(android.R.color.transparent));
         Window window = getWindow();

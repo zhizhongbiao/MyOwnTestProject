@@ -1,0 +1,465 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80px"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30px"
+                android:text="编号："
+                android:textColor="@color/text_gray_deep"
+                android:textSize="30px"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="LV123456"
+                android:textColor="@color/text_black"
+                android:textSize="30px"
+                />
+        </com.zhy.autolayout.AutoLinearLayout>
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80px"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30px"
+                android:text="客源代理："
+                android:textColor="@color/text_gray_deep"
+                android:textSize="26px"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="马云"
+                android:textColor="@color/text_black"
+                android:textSize="26px"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="（18711110000）"
+                android:textColor="@color/text_black"
+                android:textSize="26px"
+                />
+
+        </com.zhy.autolayout.AutoLinearLayout>
+
+        <View
+            style="@style/split_line_gray_hor"
+            android:layout_marginLeft="30px"
+            android:layout_marginRight="30px"
+            />
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="120px"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            >
+
+            <com.zhy.autolayout.AutoRelativeLayout
+                android:layout_width="0px"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                >
+
+                <TextView
+                    android:id="@+id/id_tv_huxing"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="户型"
+                    android:textColor="@color/text_gray_deep"
+                    android:textSize="30px"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/id_tv_huxing"
+                    android:layout_centerHorizontal="true"
+                    android:text="2室1厅"
+                    android:textColor="@color/text_orange"
+                    android:textSize="30px"
+                    />
+            </com.zhy.autolayout.AutoRelativeLayout>
+
+            <com.zhy.autolayout.AutoRelativeLayout
+                android:layout_width="0px"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                >
+
+                <TextView
+                    android:id="@+id/id_tv_area"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="面积"
+                    android:textColor="@color/text_gray_deep"
+                    android:textSize="30px"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/id_tv_area"
+                    android:layout_centerHorizontal="true"
+                    android:text="56-90㎡"
+                    android:textColor="@color/text_orange"
+                    android:textSize="30px"
+                    />
+            </com.zhy.autolayout.AutoRelativeLayout>
+
+            <com.zhy.autolayout.AutoRelativeLayout
+                android:layout_width="0px"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                >
+
+                <TextView
+                    android:id="@+id/id_tv_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="价格"
+                    android:textColor="@color/text_gray_deep"
+                    android:textSize="30px"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/id_tv_price"
+                    android:layout_centerHorizontal="true"
+                    android:text="60-100万"
+                    android:textColor="@color/text_orange"
+                    android:textSize="30px"
+                    />
+            </com.zhy.autolayout.AutoRelativeLayout>
+
+        </com.zhy.autolayout.AutoLinearLayout>
+
+        <View
+            style="@style/split_line_gray_hor"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="90px"
+            android:layout_marginLeft="40px"
+            android:gravity="center_vertical"
+            android:text="客户意向"
+            android:textColor="@color/text_black"
+            android:textSize="30px"
+            />
+
+        <View
+            style="@style/split_line_gray_hor"
+            />
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80px"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            >
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_width="300px"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="40px"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="区域："
+                    android:textColor="@color/text_gray_deep"
+                    android:textSize="26px"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="南城,东城,寮步"
+                    android:textColor="@color/text_black"
+                    android:textSize="26px"
+                    />
+            </com.zhy.autolayout.AutoLinearLayout>
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="类型："
+                    android:textColor="@color/text_gray_deep"
+                    android:textSize="26px"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="住宅"
+                    android:textColor="@color/text_black"
+                    android:textSize="26px"
+                    />
+            </com.zhy.autolayout.AutoLinearLayout>
+
+
+        </com.zhy.autolayout.AutoLinearLayout>
+
+        <View
+            style="@style/split_line_gray_hor"
+            android:layout_marginLeft="30px"
+            android:layout_marginRight="30px"
+            />
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80px"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            >
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_width="300px"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="40px"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="装修："
+                    android:textColor="@color/text_gray_deep"
+                    android:textSize="26px"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="精装修"
+                    android:textColor="@color/text_black"
+                    android:textSize="26px"
+                    />
+            </com.zhy.autolayout.AutoLinearLayout>
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="意向度："
+                    android:textColor="@color/text_gray_deep"
+                    android:textSize="26px"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="培养"
+                    android:textColor="@color/text_black"
+                    android:textSize="26px"
+                    />
+            </com.zhy.autolayout.AutoLinearLayout>
+
+
+        </com.zhy.autolayout.AutoLinearLayout>
+
+        <View
+            style="@style/split_line_gray_hor"
+            android:layout_marginLeft="30px"
+            android:layout_marginRight="30px"
+            />
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80px"
+            android:layout_marginLeft="40px"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="楼盘："
+                android:textColor="@color/text_gray_deep"
+                android:textSize="26px"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="第一国际,东城中心,万科广场"
+                android:textColor="@color/text_black"
+                android:textSize="26px"
+                />
+        </com.zhy.autolayout.AutoLinearLayout>
+
+        <View
+            style="@style/split_line_gray_hor"
+            android:layout_marginLeft="30px"
+            android:layout_marginRight="30px"
+            />
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80px"
+            android:layout_marginLeft="40px"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="标签："
+                android:textColor="@color/text_gray_deep"
+                android:textSize="26px"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20px"
+                android:background="@drawable/shape_type_green_4px"
+                android:paddingBottom="10px"
+                android:paddingLeft="20px"
+                android:paddingRight="20px"
+                android:paddingTop="10px"
+                android:text="高层"
+                android:textColor="@color/text_green"
+                android:textSize="20px"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20px"
+                android:background="@drawable/shape_type_bule_4px"
+                android:paddingBottom="10px"
+                android:paddingLeft="20px"
+                android:paddingRight="20px"
+                android:paddingTop="10px"
+                android:text="海景房"
+                android:textColor="@color/text_bule"
+                android:textSize="20px"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20px"
+                android:background="@drawable/shape_type_red_4px"
+                android:paddingBottom="10px"
+                android:paddingLeft="20px"
+                android:paddingRight="20px"
+                android:paddingTop="10px"
+                android:text="地铁房"
+                android:textColor="@color/text_red"
+                android:textSize="20px"
+                />
+        </com.zhy.autolayout.AutoLinearLayout>
+
+        <View
+            style="@style/split_line_gray_hor"
+            android:layout_marginLeft="30px"
+            android:layout_marginRight="30px"
+            />
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80px"
+            android:layout_marginLeft="40px"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="备注："
+                android:textColor="@color/text_gray_deep"
+                android:textSize="26px"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="小三房也行,周边配套要完善"
+                android:textColor="@color/text_black"
+                android:textSize="26px"
+                />
+        </com.zhy.autolayout.AutoLinearLayout>
+
+        <View
+            style="@style/split_line_gray_hor"
+            />
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <TextView
+        android:layout_width="640px"
+        android:layout_height="80px"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10px"
+        android:background="@drawable/shape_bg_orange_10px"
+        android:gravity="center"
+        android:text="抢单"
+        android:textColor="@color/text_white"
+        android:textSize="28px"
+        />
+
+</RelativeLayout>

@@ -38,7 +38,7 @@ public class ProjectListBean extends BaseVo {
          * thumb_img : http://dongguan.huifang.cn/u/uploads/2017/07/5975be262d83f.jpg
          */
 
-        public String project_id;
+        public int project_id;
         public String project_name;
         public String region_id;
         public String project_price;

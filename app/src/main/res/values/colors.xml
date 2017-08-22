@@ -8,4 +8,18 @@
     <color name="bgColor">#ebebeb</color>
     <color name="splitLineColor">#e0dad5</color>
     <color name="BigSplitLineColor">#f5f2f7</color>
+
+    <color name="text_black">#333333</color>
+    <color name="text_gray_deep">#666666</color>
+    <color name="text_gray_low">#999999</color>
+    <color name="text_orange">#ff850b</color>
+    <color name="text_white">#ffffff</color>
+    <color name="text_green">#76c400</color>
+    <color name="text_bule">#15afee</color>
+    <color name="text_red">#e58a8a</color>
+
+
+    <color name="bg_gray">#b3b3b3</color>
+    <color name="bg_orange">#ff850b</color>
+
 </resources>

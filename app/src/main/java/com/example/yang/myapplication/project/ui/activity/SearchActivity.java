@@ -22,7 +22,7 @@ public class SearchActivity extends BaseActivity {
 
 
     @Override
-    protected void initView(Bundle savedInstanceState, ToolbarHolder tbHolder, Intent intent) {
+    protected void initView(Bundle savedInstanceState, ToolbarHolder tbHolder, Intent args) {
 
     }
 

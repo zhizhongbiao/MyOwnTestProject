@@ -2,16 +2,16 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:background="#FFF"
-    android:layout_margin="20px"
-    >
+    android:layout_marginLeft="20px"
+    android:layout_marginRight="20px"
+    android:layout_marginTop="20px"
+    android:background="#FFFFFF">
 
     <ImageView
         android:id="@+id/ivEstate"
         android:layout_width="match_parent"
         android:layout_height="400px"
         android:layout_centerHorizontal="true"
-
         android:src="@mipmap/ic_launcher_round" />
 
     <TextView
@@ -20,10 +20,10 @@
         android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/ivEstate"
         android:layout_below="@+id/ivEstate"
-        android:layout_marginTop="27px"
         android:layout_marginBottom="18px"
-        android:text="付英华动画华府"
+        android:layout_marginTop="27px"
         android:paddingLeft="18px"
+        android:text="付英华动画华府"
         android:textColor="#333333"
         android:textSize="32px" />
 
@@ -32,8 +32,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/ivEstate"
-        android:layout_marginTop="27px"
         android:layout_marginLeft="14px"
+        android:layout_marginTop="27px"
         android:layout_toRightOf="@+id/etEstateName"
         android:text="(南城)"
         android:textColor="#999999"
@@ -58,8 +58,8 @@
         android:layout_alignRight="@+id/ivEstate"
         android:layout_below="@+id/ivEstate"
         android:layout_marginTop="30px"
-        android:text="元/方"
         android:paddingRight="18px"
+        android:text="元/㎡"
         android:textColor="#999999"
         android:textSize="28px" />
 

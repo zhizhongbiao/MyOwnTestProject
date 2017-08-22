@@ -8,10 +8,11 @@ import android.support.v4.view.ViewPager;
 
 import com.example.yang.myapplication.R;
 import com.example.yang.myapplication.base.adpter.TabBarAdapter;
+import com.example.yang.myapplication.base.mvp.utils.ToastUtil;
 import com.example.yang.myapplication.base.mvp.view.BaseActivity;
-import com.example.yang.myapplication.order.ui.fragment.ClientFragment;
-import com.example.yang.myapplication.data.ui.fragment.HouseFragment;
+import com.example.yang.myapplication.data.ui.fragment.DataFragment;
 import com.example.yang.myapplication.my.ui.fragment.MyFragment;
+import com.example.yang.myapplication.order.ui.fragment.OrderFragment;
 import com.example.yang.myapplication.project.ui.fragment.ProjectFragment;
 import com.jpeng.jptabbar.JPTabBar;
 import com.jpeng.jptabbar.anno.NorIcons;
@@ -23,6 +24,12 @@ import java.util.List;
 
 import butterknife.BindView;
 
+
+/**
+ * Author : WaterFlower.
+ * Created on 2017/8/14.
+ * Desc :   主页面
+ */
 public class MainActivity extends BaseActivity {
 
 
@@ -30,6 +37,8 @@ public class MainActivity extends BaseActivity {
     ViewPager vpContainer;
     @BindView(R.id.tabbar)
     JPTabBar tabbar;
+
+    private long lastClick;
 
     List<Fragment> fragments = new ArrayList<>();
     TabBarAdapter adapter;
@@ -39,15 +48,15 @@ public class MainActivity extends BaseActivity {
 
     @NorIcons
     private static final int[] mNormalIcons = {R.drawable.project_46
-            ,R.drawable.get_order_46
-            ,R.drawable.data_46
-            ,R.drawable.me_46};
+            , R.drawable.get_order_46
+            , R.drawable.data_46
+            , R.drawable.me_46};
 
     @SeleIcons
     private static final int[] mSeleIcons = {R.drawable.project_check_46
-            ,R.drawable.get_order_check_46
-            ,R.drawable.data_check_46
-            ,R.drawable.me_check_46};
+            , R.drawable.get_order_check_46
+            , R.drawable.data_check_46
+            , R.drawable.me_check_46};
 
 
     /**
@@ -67,11 +76,9 @@ public class MainActivity extends BaseActivity {
 
 
     @Override
-    protected void initView(Bundle savedInstanceState, BaseActivity.ToolbarHolder tbHolder, Intent intent) {
+    protected void initView(Bundle savedInstanceState, ToolbarHolder tbHolder, Intent args) {
         initTab();
     }
-
-
 
     private void initTab() {
 //        tabbar  .setTabTextSize(DisplayUtil.px2sp(this,24f));
@@ -83,8 +90,8 @@ public class MainActivity extends BaseActivity {
 
 
         fragments.add(ProjectFragment.newInstance());
-        fragments.add(HouseFragment.newInstance());
-        fragments.add(ClientFragment.newInstance());
+        fragments.add(OrderFragment.newInstance());
+        fragments.add(DataFragment.newInstance());
         fragments.add(MyFragment.newInstance());
 
         adapter = new TabBarAdapter(getSupportFragmentManager(), fragments);
@@ -92,4 +99,15 @@ public class MainActivity extends BaseActivity {
         tabbar.setContainer(vpContainer);
     }
 
+    @Override
+    public void onBackPressedSupport() {
+
+        long clickTimeStamp = System.currentTimeMillis();
+        if (clickTimeStamp - lastClick > 2500) {
+            ToastUtil.showShort("再按一次退出应用");
+            lastClick = clickTimeStamp;
+            return;
+        }
+        super.onBackPressedSupport();
+    }
 }

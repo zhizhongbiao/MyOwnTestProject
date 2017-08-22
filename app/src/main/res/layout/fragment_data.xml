@@ -1,0 +1,531 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgColor"
+    android:orientation="vertical">
+
+
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="96px"
+
+        android:background="@color/appColor"
+        android:orientation="horizontal"
+        android:gravity="center"
+        >
+        <TextView
+            android:id="@+id/tvEstateName"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="万达公馆"
+            android:textSize="34px"
+            android:textColor="#FFF"
+            />
+
+        <ImageView
+            android:layout_width="46px"
+            android:layout_height="32px"
+            android:layout_marginLeft="16px"
+            android:src="@mipmap/bottom_arrow"
+            />
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="91px"
+                android:layout_marginLeft="29px"
+                android:gravity="center_vertical"
+                android:text="报备客户"
+                android:textColor="#333333"
+                android:textSize="30px" />
+
+            <com.zhy.autolayout.AutoRelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="80px"
+                android:background="#FFFFFF">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="38px"
+                    android:text="现场客户"
+                    android:textColor="#666666"
+                    android:textSize="26px" />
+
+                <TextView
+                    android:id="@+id/tvRPresentCount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="38px"
+                    android:text="10 批"
+                    android:textColor="#333333"
+                    android:textSize="28px" />
+
+            </com.zhy.autolayout.AutoRelativeLayout>
+
+            <com.zhy.autolayout.AutoFrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#FFF">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_marginLeft="40px"
+                    android:layout_marginRight="40px"
+                    android:background="@color/bgColor" />
+
+            </com.zhy.autolayout.AutoFrameLayout>
+
+            <com.zhy.autolayout.AutoRelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="80px"
+                android:background="#FFFFFF">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="38px"
+                    android:text="自由经纪人"
+                    android:textColor="#666666"
+                    android:textSize="26px" />
+
+                <TextView
+                    android:id="@+id/tvRAgentCount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="38px"
+                    android:text="10 批"
+                    android:textColor="#333333"
+                    android:textSize="28px" />
+
+            </com.zhy.autolayout.AutoRelativeLayout>
+
+            <com.zhy.autolayout.AutoFrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#FFF">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_marginLeft="40px"
+                    android:layout_marginRight="40px"
+                    android:background="@color/bgColor" />
+
+            </com.zhy.autolayout.AutoFrameLayout>
+
+            <com.zhy.autolayout.AutoRelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="80px"
+                android:background="#FFFFFF">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="38px"
+                    android:text="中介客户"
+                    android:textColor="#666666"
+                    android:textSize="26px" />
+
+                <TextView
+                    android:id="@+id/tvRMiddleCount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="38px"
+                    android:text="10 批"
+                    android:textColor="#333333"
+                    android:textSize="28px" />
+
+            </com.zhy.autolayout.AutoRelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="91px"
+                android:layout_marginLeft="29px"
+                android:gravity="center_vertical"
+                android:text="到访客户"
+                android:textColor="#333333"
+                android:textSize="30px" />
+
+
+            <com.zhy.autolayout.AutoRelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="80px"
+                android:background="#FFFFFF">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="38px"
+                    android:text="现场客户"
+                    android:textColor="#666666"
+                    android:textSize="26px" />
+
+                <TextView
+                    android:id="@+id/tvVPresentCount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="38px"
+                    android:text="10 批"
+                    android:textColor="#333333"
+                    android:textSize="28px" />
+
+            </com.zhy.autolayout.AutoRelativeLayout>
+
+            <com.zhy.autolayout.AutoFrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#FFF">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_marginLeft="40px"
+                    android:layout_marginRight="40px"
+                    android:background="@color/bgColor" />
+
+            </com.zhy.autolayout.AutoFrameLayout>
+
+            <com.zhy.autolayout.AutoRelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="80px"
+                android:background="#FFFFFF">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="38px"
+                    android:text="自由经纪人"
+                    android:textColor="#666666"
+                    android:textSize="26px" />
+
+                <TextView
+                    android:id="@+id/tvVAgentCount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="38px"
+                    android:text="10 批"
+                    android:textColor="#333333"
+                    android:textSize="28px" />
+
+            </com.zhy.autolayout.AutoRelativeLayout>
+
+            <com.zhy.autolayout.AutoFrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#FFF">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_marginLeft="40px"
+                    android:layout_marginRight="40px"
+                    android:background="@color/bgColor" />
+
+            </com.zhy.autolayout.AutoFrameLayout>
+
+            <com.zhy.autolayout.AutoRelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="80px"
+                android:background="#FFFFFF">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="38px"
+                    android:text="中介客户"
+                    android:textColor="#666666"
+                    android:textSize="26px" />
+
+                <TextView
+                    android:id="@+id/tvVMiddleCount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="38px"
+                    android:text="10 批"
+                    android:textColor="#333333"
+                    android:textSize="28px" />
+
+            </com.zhy.autolayout.AutoRelativeLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="91px"
+                android:layout_marginLeft="29px"
+                android:gravity="center_vertical"
+                android:text="下定客户"
+                android:textColor="#333333"
+                android:textSize="30px" />
+
+
+            <com.zhy.autolayout.AutoRelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="80px"
+                android:background="#FFFFFF">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="38px"
+                    android:text="现场客户"
+                    android:textColor="#666666"
+                    android:textSize="26px" />
+
+                <TextView
+                    android:id="@+id/tvDPresentCount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="38px"
+                    android:text="10 批"
+                    android:textColor="#333333"
+                    android:textSize="28px" />
+
+            </com.zhy.autolayout.AutoRelativeLayout>
+
+            <com.zhy.autolayout.AutoFrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#FFF">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_marginLeft="40px"
+                    android:layout_marginRight="40px"
+                    android:background="@color/bgColor" />
+
+            </com.zhy.autolayout.AutoFrameLayout>
+
+            <com.zhy.autolayout.AutoRelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="80px"
+                android:background="#FFFFFF">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="38px"
+                    android:text="自由经纪人"
+                    android:textColor="#666666"
+                    android:textSize="26px" />
+
+                <TextView
+                    android:id="@+id/tvDAgentCount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="38px"
+                    android:text="10 批"
+                    android:textColor="#333333"
+                    android:textSize="28px" />
+
+            </com.zhy.autolayout.AutoRelativeLayout>
+
+            <com.zhy.autolayout.AutoFrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#FFF">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_marginLeft="40px"
+                    android:layout_marginRight="40px"
+                    android:background="@color/bgColor" />
+
+            </com.zhy.autolayout.AutoFrameLayout>
+
+            <com.zhy.autolayout.AutoRelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="80px"
+                android:background="#FFFFFF">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="38px"
+                    android:text="中介客户"
+                    android:textColor="#666666"
+                    android:textSize="26px" />
+
+                <TextView
+                    android:id="@+id/tvDMiddleCount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="38px"
+                    android:text="10 批"
+                    android:textColor="#333333"
+                    android:textSize="28px" />
+
+            </com.zhy.autolayout.AutoRelativeLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="91px"
+                android:layout_marginLeft="29px"
+                android:gravity="center_vertical"
+                android:text="签约客户"
+                android:textColor="#333333"
+                android:textSize="30px" />
+
+
+            <com.zhy.autolayout.AutoRelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="80px"
+                android:background="#FFFFFF">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="38px"
+                    android:text="现场客户"
+                    android:textColor="#666666"
+                    android:textSize="26px" />
+
+                <TextView
+                    android:id="@+id/tvSPresentCount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="38px"
+                    android:text="10 批"
+                    android:textColor="#333333"
+                    android:textSize="28px" />
+
+            </com.zhy.autolayout.AutoRelativeLayout>
+
+            <com.zhy.autolayout.AutoFrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#FFF">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_marginLeft="40px"
+                    android:layout_marginRight="40px"
+                    android:background="@color/bgColor" />
+
+            </com.zhy.autolayout.AutoFrameLayout>
+
+            <com.zhy.autolayout.AutoRelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="80px"
+                android:background="#FFFFFF">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="38px"
+                    android:text="自由经纪人"
+                    android:textColor="#666666"
+                    android:textSize="26px" />
+
+                <TextView
+                    android:id="@+id/tvSAgentCount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="38px"
+                    android:text="10 批"
+                    android:textColor="#333333"
+                    android:textSize="28px" />
+
+            </com.zhy.autolayout.AutoRelativeLayout>
+
+            <com.zhy.autolayout.AutoFrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#FFF">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_marginLeft="40px"
+                    android:layout_marginRight="40px"
+                    android:background="@color/bgColor" />
+
+            </com.zhy.autolayout.AutoFrameLayout>
+
+            <com.zhy.autolayout.AutoRelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="80px"
+                android:background="#FFFFFF">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="38px"
+                    android:text="中介客户"
+                    android:textColor="#666666"
+                    android:textSize="26px" />
+
+                <TextView
+                    android:id="@+id/tvSMiddleCount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="38px"
+                    android:text="10 批"
+                    android:textColor="#333333"
+                    android:textSize="28px" />
+
+            </com.zhy.autolayout.AutoRelativeLayout>
+
+
+        </com.zhy.autolayout.AutoLinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

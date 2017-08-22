@@ -17,4 +17,10 @@
         <item name="android:textSize">30px</item>
     </style>
 
+    <style name="split_line_gray_hor">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1px</item>
+        <item name="android:background">@color/text_gray_low</item>
+    </style>
+
 </resources>

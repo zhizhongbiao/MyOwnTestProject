@@ -103,9 +103,11 @@
         android:id="@+id/tvForgetPsw"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginRight="38px"
-        android:layout_marginTop="30px"
+
+        android:paddingTop="30px"
+        android:paddingBottom="30px"
         android:gravity="right"
+        android:paddingRight="38px"
         android:text="忘记密码?"
         android:textColor="#666666"
         android:textSize="28px" />
