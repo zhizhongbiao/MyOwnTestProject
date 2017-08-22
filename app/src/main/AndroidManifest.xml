@@ -65,10 +65,10 @@
         <!--搜索客人Activity-->
         <activity
             android:name=".project.ui.activity.ClientSearchActivity"
-            android:windowSoftInputMode="adjustUnspecified|stateHidden">
-            >
+            android:windowSoftInputMode="adjustUnspecified|stateHidden"/>
+        <!--全部客源 -->
+        <activity android:name=".project.ui.activity.AllProjectDetailActivity" />
 
-        </activity>
 
 
         <!--AutoLayout标明设计图尺寸-->

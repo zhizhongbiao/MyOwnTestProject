@@ -6,9 +6,10 @@ import android.view.View;
 import com.chad.library.adapter.base.BaseQuickAdapter;
 import com.chad.library.adapter.base.BaseViewHolder;
 import com.example.yang.myapplication.R;
-import com.example.yang.myapplication.order.bean.ProjectListBean;
+import com.example.yang.myapplication.project.bean.ProjectItemBean;
 import com.zhy.autolayout.utils.AutoUtils;
 
+import static com.example.yang.myapplication.project.base.CommonRvFragment.TYPE_ALL;
 import static com.example.yang.myapplication.project.base.CommonRvFragment.TYPE_CARRY;
 import static com.example.yang.myapplication.project.base.CommonRvFragment.TYPE_COMMISSION;
 import static com.example.yang.myapplication.project.base.CommonRvFragment.TYPE_DEPOSIT;
@@ -21,7 +22,7 @@ import static com.example.yang.myapplication.project.base.CommonRvFragment.TYPE_
  * Desc :
  */
 
-public class ProjectItemAdapter extends BaseQuickAdapter<ProjectListBean.DataBean, BaseViewHolder> {
+public class ProjectItemAdapter extends BaseQuickAdapter<ProjectItemBean, BaseViewHolder> {
     private Context context;
     private int type=-1;
 
@@ -32,7 +33,7 @@ public class ProjectItemAdapter extends BaseQuickAdapter<ProjectListBean.DataBea
     }
 
     @Override
-    protected void convert(BaseViewHolder helper, ProjectListBean.DataBean item) {
+    protected void convert(BaseViewHolder helper, ProjectItemBean item) {
         switch (type) {
             case TYPE_REPORT:
                 break;
@@ -43,6 +44,8 @@ public class ProjectItemAdapter extends BaseQuickAdapter<ProjectListBean.DataBea
             case TYPE_SIGN:
                 break;
             case TYPE_COMMISSION:
+                break;
+            case TYPE_ALL:
                 break;
 
         }

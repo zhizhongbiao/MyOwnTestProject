@@ -28,7 +28,7 @@ import butterknife.BindView;
 
 public class ProjectDetail extends BaseActivity {
 
-
+    private static final String PROJECT_NAME_KEY = "projectNameKey";
     private static final String[] titles = {"报备", "带客", "下定", "签约", "结佣"};
 
     @BindView(R.id.tablayout)
@@ -38,8 +38,9 @@ public class ProjectDetail extends BaseActivity {
     private List<Fragment> fragments = new ArrayList<>();
     private TabBarAdapter adapter;
 
-    public static Intent getIntent(Context context, String args) {
+    public static Intent getIntent(Context context, String projectName) {
         Intent intent = new Intent(context, ProjectDetail.class);
+        intent.putExtra(PROJECT_NAME_KEY, projectName);
         return intent;
     }
 
@@ -55,30 +56,29 @@ public class ProjectDetail extends BaseActivity {
     }
 
 
-
     @Override
     protected void initView(Bundle savedInstanceState, ToolbarHolder tbHolder, Intent intent) {
-        initToolbar(tbHolder);
+        initToolbar(tbHolder, intent.getStringExtra(PROJECT_NAME_KEY));
         initTab();
     }
 
-    private void initToolbar(ToolbarHolder tbHolder) {
+    private void initToolbar(ToolbarHolder tbHolder, String projectName) {
         tbHolder.ivBack.setVisibility(View.GONE);
-        tbHolder.tvCenterTitle.setText("ProjectName");
+        tbHolder.tvCenterTitle.setText(projectName);
         tbHolder.ivRight.setVisibility(View.VISIBLE);
         tbHolder.ivRight.setImageResource(R.drawable.search_36);
         tbHolder.ivRight.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(ClientSearchActivity.getIntent(ProjectDetail.this,"暂无参数"));
+                startActivity(ClientSearchActivity.getIntent(ProjectDetail.this, "暂无参数"));
             }
         });
         tbHolder.tvLeftTitle.setVisibility(View.VISIBLE);
-        tbHolder.tvLeftTitle.setText("全部客源");
+        tbHolder.tvLeftTitle.setText("全部");
         tbHolder.tvLeftTitle.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                startActivity(AllProjectDetailActivity.getIntent(ProjectDetail.this, "暂无参数"));
             }
         });
     }

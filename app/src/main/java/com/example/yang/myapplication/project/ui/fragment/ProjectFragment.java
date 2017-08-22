@@ -97,7 +97,7 @@ public class ProjectFragment extends MvpFragment<MvpBasePresenter> {
         adapter.setOnItemClickListener(new BaseQuickAdapter.OnItemClickListener() {
             @Override
             public void onItemClick(BaseQuickAdapter adapter, View view, int position) {
-                startActivity(ProjectDetail.getIntent(getActivity(), "暂时无参数"));
+                startActivity(ProjectDetail.getIntent(getActivity(), ((ProjectListBean.DataBean) adapter.getData().get(position)).project_name));
             }
         });
     }

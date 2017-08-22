@@ -33,6 +33,8 @@ public class CommonRvFragment extends MvpFragment<MvpBasePresenter> {
     public static final int TYPE_SIGN = 3;
     //结佣
     public static final int TYPE_COMMISSION = 4;
+    //全部
+    public static final int TYPE_ALL = 5;
 
     private static final String TYPE_KEY = "typeKey";
 
@@ -41,6 +43,7 @@ public class CommonRvFragment extends MvpFragment<MvpBasePresenter> {
     private int type;
 
     private int page = 1;
+    private ProjectItemAdapter adapter;
 
 
     public static CommonRvFragment newInstance(int type) {
@@ -53,7 +56,7 @@ public class CommonRvFragment extends MvpFragment<MvpBasePresenter> {
 
     @Override
     public int getViewLayout() {
-        return R.layout.fragment_common_recyclerview;
+        return R.layout.layout_common_recyclerview;
     }
 
     @Override
@@ -64,7 +67,8 @@ public class CommonRvFragment extends MvpFragment<MvpBasePresenter> {
 
     private void initRv() {
         rv.setLayoutManager(new LinearLayoutManager(getActivity()));
-        rv.setAdapter(new ProjectItemAdapter(getActivity(), type));
+        adapter = new ProjectItemAdapter(getActivity(), type);
+        rv.setAdapter(adapter);
     }
 
 

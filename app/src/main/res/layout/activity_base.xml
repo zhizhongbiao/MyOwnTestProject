@@ -15,19 +15,21 @@
 
         <ImageView
             android:id="@+id/ivBack"
-            android:layout_width="34px"
-            android:layout_height="40px"
+            android:layout_width="90px"
+            android:layout_height="match_parent"
+            android:padding="28px"
             android:layout_centerVertical="true"
-            android:layout_marginLeft="30px"
+            android:layout_marginLeft="2px"
             android:src="@mipmap/back_up" />
 
         <TextView
             android:id="@+id/tvLeftTitle"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:layout_alignParentLeft="true"
             android:layout_centerVertical="true"
-            android:layout_marginLeft="30px"
+            android:gravity="center"
+            android:padding="30px"
             android:text="左标题"
             android:visibility="gone"
             android:textColor="#fff"
@@ -38,7 +40,8 @@
         <TextView
             android:id="@+id/tvCenterTitle"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
             android:layout_centerInParent="true"
             android:text="中标题"
             android:textColor="#fff"
@@ -48,10 +51,11 @@
         <TextView
             android:id="@+id/tvRightTitle"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:layout_alignParentRight="true"
             android:layout_centerVertical="true"
-            android:layout_marginRight="30px"
+            android:gravity="center"
+            android:padding="30px"
             android:text="右标题"
             android:textColor="#fff"
             android:textSize="34px"
@@ -60,13 +64,15 @@
 
         <ImageView
             android:id="@+id/ivRight"
-            android:layout_width="40px"
-            android:layout_height="40px"
+            android:layout_width="96px"
+            android:layout_height="match_parent"
+            android:padding="28px"
             android:layout_alignParentRight="true"
             android:layout_centerVertical="true"
-            android:layout_marginRight="30px"
+            android:layout_marginRight="2px"
             android:src="@mipmap/ic_launcher_round"
-            android:visibility="gone" />
+            android:visibility="gone"
+            />
 
     </com.zhy.autolayout.AutoRelativeLayout>
 
