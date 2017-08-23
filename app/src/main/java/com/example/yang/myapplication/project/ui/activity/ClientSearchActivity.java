@@ -50,7 +50,7 @@ public class ClientSearchActivity extends MvpActivity<MvpBasePresenter> {
 
     @Override
     protected void initView(Bundle savedInstanceState, ToolbarHolder tbHolder, Intent args) {
-        initToolbar();
+
     }
 
 
@@ -62,11 +62,6 @@ public class ClientSearchActivity extends MvpActivity<MvpBasePresenter> {
 
     @Override
     public void showContentView(String url, BaseVo dataVo) {
-
-    }
-
-
-    private void initToolbar() {
 
     }
 

@@ -70,6 +70,8 @@
         <activity android:name=".project.ui.activity.AllClientTypeActivity" />
         <!--消息通知 -->
         <activity android:name=".my.ui.activity.MsgInfoActivity" />
+        <!--添加客户 -->
+        <activity android:name=".project.ui.activity.AddClientActivity" />
 
 
 

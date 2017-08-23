@@ -1,6 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.v7.widget.RecyclerView xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/rv"
+<com.example.yang.myapplication.base.mvp.widget.refresh.RefreshLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/refreshLayout"
     android:layout_width="match_parent"
-    android:layout_height="match_parent" />
+    android:layout_height="0px"
+    android:layout_weight="1"
+    android:background="@color/bgColor"
+    app:pullMaxHeight="100dp"
+    app:pullViewHeight="80dp">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</com.example.yang.myapplication.base.mvp.widget.refresh.RefreshLayout>
 

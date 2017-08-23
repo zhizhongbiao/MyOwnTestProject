@@ -18,6 +18,7 @@ import com.example.yang.myapplication.base.mvp.widget.refresh.NestedRefreshLayou
 import com.example.yang.myapplication.base.mvp.widget.refresh.RefreshLayout;
 import com.example.yang.myapplication.order.bean.ProjectListBean;
 import com.example.yang.myapplication.project.adapter.EstateAdapter;
+import com.example.yang.myapplication.project.ui.activity.AddClientActivity;
 import com.example.yang.myapplication.project.ui.activity.ClientSearchActivity;
 import com.example.yang.myapplication.project.ui.activity.ProjectDetail;
 
@@ -63,8 +64,7 @@ public class ProjectFragment extends MvpFragment<MvpBasePresenter> implements Ne
     protected void initView(Bundle savedInstanceState, Bundle args) {
         initRv();
         refreshLayout.setOnRefreshListener(this);
-        adapter.setOnLoadMoreListener(this, rvEstate);
-        adapter.openLoadAnimation();
+
     }
 
 
@@ -88,6 +88,7 @@ public class ProjectFragment extends MvpFragment<MvpBasePresenter> implements Ne
     public void onViewClicked(View view) {
         switch (view.getId()) {
             case R.id.ivAdd:
+                startActivity(AddClientActivity.getIntent(getActivity(), "暂时无参数"));
                 break;
             case R.id.ivSearch:
                 startActivity(ClientSearchActivity.getIntent(getActivity(), "暂时无参数"));
@@ -103,6 +104,8 @@ public class ProjectFragment extends MvpFragment<MvpBasePresenter> implements Ne
         rvEstate.setLayoutManager(new LinearLayoutManager(getActivity()));
         adapter = new EstateAdapter(getActivity());
         rvEstate.setAdapter(adapter);
+        adapter.setOnLoadMoreListener(this, rvEstate);
+        adapter.openLoadAnimation();
 
         adapter.setOnItemClickListener(new BaseQuickAdapter.OnItemClickListener() {
             @Override
@@ -157,7 +160,8 @@ public class ProjectFragment extends MvpFragment<MvpBasePresenter> implements Ne
      * @param refreshLayout
      */
     private void closeRefresh(RefreshLayout refreshLayout) {
-        if (refreshLayout.isOnRefreshing()) {
+
+        if (refreshLayout!=null&&refreshLayout.isOnRefreshing()) {
             refreshLayout.refreshFinish();
         }
         if (adapter.isLoading()) {
