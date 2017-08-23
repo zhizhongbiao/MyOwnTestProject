@@ -35,7 +35,7 @@ public class AddClientActivity extends MvpActivity<MvpBasePresenter> {
 
     @Override
     protected void initView(Bundle savedInstanceState, ToolbarHolder tbHolder, Intent args) {
-        tbHolder.tvCenterTitle.setText("添加客户....");
+        tbHolder.tvCenterTitle.setText("添加客户");
     }
 
     @Override
